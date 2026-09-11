@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from src.clustering import run_clustering
 from src.config import (
     ASEAN_COUNTRIES,
     CLEAN_PATH,
@@ -93,14 +94,16 @@ def load_outputs() -> dict:
     missing = [str(path) for path in required if not path.exists()]
     if missing:
         raise FileNotFoundError("Run `python run_pipeline.py` first. Missing: " + ", ".join(missing))
+    features = pd.read_csv(FEATURE_PATH)
+    clusters, cluster_eval, _ = run_clustering(features)
     return {
         "clean": pd.read_csv(CLEAN_PATH),
-        "features": pd.read_csv(FEATURE_PATH),
+        "features": features,
         "coverage": pd.read_csv(COVERAGE_PATH),
         "ranking": pd.read_csv(RANKING_PATH),
         "outliers": pd.read_csv(OUTLIER_PATH),
-        "clusters": pd.read_csv(CLUSTER_PATH),
-        "cluster_eval": pd.read_csv(CLUSTER_EVAL_PATH) if CLUSTER_EVAL_PATH.exists() else pd.DataFrame(),
+        "clusters": clusters,
+        "cluster_eval": cluster_eval,
         "stories": pd.read_csv(STORY_PATH),
         "metadata": json.loads(METADATA_PATH.read_text(encoding="utf-8")),
     }

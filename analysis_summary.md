@@ -23,7 +23,7 @@ The raw IMF WEO April 2026 response contains no LUR series for Cambodia, Lao P.D
 
 ## Methodology
 
-The pipeline compares 2015–2019 with the 2020 shock and the 2021–2024 recovery, then calculates transparent growth, inflation, debt, labor-market and external-balance features. It detects z-score outliers and evaluates KMeans and Ward hierarchical clustering for k=2 to 5 after median imputation and RobustScaler transformation. No arbitrary composite recovery score is used.
+The pipeline compares 2015–2019 with the 2020 shock and the 2021–2024 recovery, then calculates transparent growth, inflation, debt, labor-market and external-balance features. It detects z-score outliers and evaluates KMeans and Ward hierarchical clustering for k=2 to 5 using only features with complete ASEAN-10 coverage, followed by RobustScaler transformation. Missing values are never imputed. No arbitrary composite recovery score is used.
 
 ## Main findings
 

@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import RobustScaler
 
 from .clustering import select_cluster_features
@@ -83,9 +82,8 @@ def generate_figures(clean: pd.DataFrame, features: pd.DataFrame, clusters: pd.D
     generated.append("05_recovery_vs_debt.png")
 
     feature_cols, _ = select_cluster_features(features)
-    heat = features.set_index("country")[feature_cols]
-    imputed = SimpleImputer(strategy="median").fit_transform(heat)
-    standardized = RobustScaler().fit_transform(imputed)
+    heat = features.set_index("country")[feature_cols].dropna()
+    standardized = RobustScaler().fit_transform(heat)
     heat_scaled = pd.DataFrame(standardized, index=heat.index, columns=feature_cols)
     fig, ax = plt.subplots(figsize=(11, 7))
     sns.heatmap(heat_scaled, cmap="RdYlBu_r", center=0, linewidths=0.4, ax=ax)

@@ -59,6 +59,8 @@ CORE_CLUSTER_FEATURES = [
     "growth_volatility_post",
 ]
 OPTIONAL_CLUSTER_FEATURES = ["unemployment_change", "current_account_change"]
-OPTIONAL_FEATURE_MIN_COVERAGE = 0.70
+# A feature may enter clustering only when every ASEAN-10 economy has a value.
+# This prevents model-time imputation from disguising source-level IMF gaps.
+OPTIONAL_FEATURE_MIN_COVERAGE = 1.00
 OUTLIER_Z_THRESHOLD = 2.0
 RANDOM_STATE = 42

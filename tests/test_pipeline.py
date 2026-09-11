@@ -4,6 +4,7 @@ import pandas as pd
 
 from src.data import build_coverage, build_sdmx_url, clean_sdmx
 from src.features import build_country_features
+from src.clustering import select_cluster_features
 
 
 def test_sdmx_url_contains_required_dimensions():
@@ -37,6 +38,24 @@ def test_coverage_keeps_missing_countries():
     coverage = build_coverage(clean)
     assert coverage["country_code"].nunique() == 10
     assert len(coverage) == 50
+
+
+def test_incomplete_optional_feature_is_not_used_for_clustering():
+    features = pd.DataFrame(
+        {
+            "covid_shock": [1.0] * 10,
+            "recovery_gap": [1.0] * 10,
+            "inflation_cost": [1.0] * 10,
+            "debt_cost": [1.0] * 10,
+            "growth_volatility_post": [1.0] * 10,
+            "unemployment_change": [1.0] * 7 + [float("nan")] * 3,
+            "current_account_change": [1.0] * 10,
+        }
+    )
+    selected, coverage = select_cluster_features(features)
+    assert coverage["unemployment_change"] == 0.7
+    assert "unemployment_change" not in selected
+    assert "current_account_change" in selected
 
 
 def test_structure_specific_xml_parser_keeps_explicit_na(tmp_path: Path):

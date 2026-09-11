@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import AgglomerativeClustering, KMeans
 from sklearn.decomposition import PCA
-from sklearn.impute import SimpleImputer
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import RobustScaler
 
@@ -41,14 +40,12 @@ def _economic_label(profile: pd.Series, medians: pd.Series) -> str:
 def run_clustering(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     feature_cols, optional_coverage = select_cluster_features(features)
     complete_core = features.dropna(subset=["country_code"]).copy()
-    usable = complete_core[feature_cols].notna().sum(axis=1) >= max(3, len(feature_cols) // 2)
-    work = complete_core.loc[usable].reset_index(drop=True)
+    work = complete_core.dropna(subset=feature_cols).reset_index(drop=True)
     if len(work) < 4 or len(feature_cols) < 2:
         empty = features[["country_code", "country"]].assign(cluster=np.nan, cluster_label="Insufficient data")
         return empty, pd.DataFrame(), {"selected_features": feature_cols, "optional_coverage": optional_coverage}
 
-    matrix = SimpleImputer(strategy="median").fit_transform(work[feature_cols])
-    scaled = RobustScaler().fit_transform(matrix)
+    scaled = RobustScaler().fit_transform(work[feature_cols])
     evaluations = []
     candidates: dict[tuple[str, int], np.ndarray] = {}
     max_k = min(5, len(work) - 1)
