@@ -1,0 +1,21 @@
+{
+  "retrieved_at_utc": "2026-09-11T03:51:55Z",
+  "dataset": "IMF.RES:WEO",
+  "vintage": "April 2026",
+  "publication_date": "2026-04-14T13:00:00Z",
+  "update_date": "2026-04-15T13:00:00Z",
+  "period": "2015-2024",
+  "raw_sha256": "A1A00AB2B3DAABFD7762A43B4DAD7E95B07BBB1AB1AE3649586DC02EC8644FB6",
+  "total_series": 47,
+  "total_observations": 470,
+  "expected_grid_rows": 500,
+  "missing_observations": 30,
+  "lur_check": {
+    "asean10_series": 7,
+    "asean10_observations": 70,
+    "KHM": {"series": 0, "observations": 0},
+    "LAO": {"series": 0, "observations": 0},
+    "MMR": {"series": 0, "observations": 0}
+  },
+  "note": "Individual IMF SDMX queries for KHM.LUR.A, LAO.LUR.A and MMR.LUR.A returned HTTP 200 with zero Series and zero Obs. No alternative source or imputation was used."
+}

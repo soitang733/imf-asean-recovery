@@ -59,6 +59,7 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `data/raw_imf_weo.xml`: nguyên phản hồi API.
 - `data/clean_imf_weo.csv`: full grid 10 × 5 × 10; quan sát IMF không có được giữ là NA.
 - `data/metadata.json`: metadata của lần lấy dữ liệu.
+- `data/crawl_audit.json`: checksum và kết quả kiểm tra crawl lại, gồm các truy vấn LUR tách riêng.
 - `outputs/data_coverage.csv`: coverage theo country × indicator.
 - `data/country_features.csv`: biến phân tích dẫn xuất.
 - `outputs/data_coverage.csv`, `outputs/outliers.csv` và `outputs/candidate_stories.csv`: đầu ra kiểm tra và phân tích đã lưu.
