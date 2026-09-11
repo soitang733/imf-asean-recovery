@@ -1,11 +1,11 @@
 ﻿country_code,country,cluster,cluster_label,pca_1,pca_2
-BRN,Brunei Darussalam,0,Cluster 0: Resilient recoverers,-17.80569015914128,-0.1317364247667989
-KHM,Cambodia,1,Cluster 1: Lower-cost and less-volatile majority,1.612724841458426,-1.5082358031512513
-IDN,Indonesia,1,Cluster 1: Lower-cost and less-volatile majority,1.4110098581699404,-2.071122999530047
-LAO,Lao P.D.R.,1,Cluster 1: Lower-cost and less-volatile majority,1.7606870504383447,4.818518695326707
-MYS,Malaysia,1,Cluster 1: Lower-cost and less-volatile majority,4.112069519284553,-1.6177356723477558
-MMR,Myanmar,1,Cluster 1: Lower-cost and less-volatile majority,2.0650073366432173,5.209035665844123
-PHL,Philippines,1,Cluster 1: Lower-cost and less-volatile majority,-0.13996792127893737,-0.943104897721234
-SGP,Singapore,1,Cluster 1: Lower-cost and less-volatile majority,1.4821559251148801,-0.5100580751561455
-THA,Thailand,1,Cluster 1: Lower-cost and less-volatile majority,2.932214804944258,-1.696584548934859
-VNM,Vietnam,1,Cluster 1: Lower-cost and less-volatile majority,2.5697887443666025,-1.5489759395627376
+BRN,Brunei Darussalam,0,Cluster 0: Singleton pattern (interpret cautiously),-17.80569015914128,-0.1317364247667989
+KHM,Cambodia,1,Cluster 1: Other ASEAN economies (heterogeneous),1.612724841458426,-1.5082358031512513
+IDN,Indonesia,1,Cluster 1: Other ASEAN economies (heterogeneous),1.4110098581699404,-2.071122999530047
+LAO,Lao P.D.R.,1,Cluster 1: Other ASEAN economies (heterogeneous),1.7606870504383447,4.818518695326707
+MYS,Malaysia,1,Cluster 1: Other ASEAN economies (heterogeneous),4.112069519284553,-1.6177356723477558
+MMR,Myanmar,1,Cluster 1: Other ASEAN economies (heterogeneous),2.0650073366432173,5.209035665844123
+PHL,Philippines,1,Cluster 1: Other ASEAN economies (heterogeneous),-0.13996792127893737,-0.943104897721234
+SGP,Singapore,1,Cluster 1: Other ASEAN economies (heterogeneous),1.4821559251148801,-0.5100580751561455
+THA,Thailand,1,Cluster 1: Other ASEAN economies (heterogeneous),2.932214804944258,-1.696584548934859
+VNM,Vietnam,1,Cluster 1: Other ASEAN economies (heterogeneous),2.5697887443666025,-1.5489759395627376

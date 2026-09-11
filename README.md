@@ -64,6 +64,7 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `outputs/data_coverage.csv`: coverage theo country × indicator.
 - `data/country_features.csv`: biến phân tích dẫn xuất.
 - `outputs/candidate_stories.csv` và `outputs/figures/*.png`: đầu ra phân tích.
+- `docs/report_vi.md`: báo cáo diễn giải tiếng Việt đã đối chiếu với dữ liệu.
 
 ## Kiến trúc mã
 
@@ -75,5 +76,7 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `src/pipeline.py`: điều phối và tạo báo cáo.
 - `app.py`: dashboard Streamlit theo luồng executive overview → country lens → trade-offs → patterns → method & QA.
 - `docs/design_review.md`: các nguyên tắc thiết kế học từ bài tham khảo và cách chuyển sang đề tài IMF.
+
+Clustering chỉ dùng các đặc trưng có coverage đầy đủ cho cả ASEAN-10; không điền giá trị thiếu. Nhãn recovery profile là so với trung vị của mẫu, không đồng nghĩa recovery gap dương.
 
 WEO April 2026 có `PUBLICATION_DATE=2026-04-14` trong SDMX response. Số version kỹ thuật bên trong dataflow vẫn có thể được IMF biểu diễn riêng; URL dùng `+` để tránh khóa pipeline vào một version cũ.

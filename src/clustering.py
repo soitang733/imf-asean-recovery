@@ -29,12 +29,12 @@ def _economic_label(profile: pd.Series, medians: pd.Series) -> str:
     inflation_high = profile["inflation_cost"] > medians["inflation_cost"]
     debt_high = profile["debt_cost"] > medians["debt_cost"]
     if recovery_high and not inflation_high and not debt_high:
-        return "Resilient recoverers"
+        return "Above-median recovery, lower costs"
     if recovery_high and (inflation_high or debt_high):
-        return "Strong but expensive recoverers"
+        return "Above-median recovery, higher costs"
     if not recovery_high and inflation_high and debt_high:
-        return "Weak and costly recoverers"
-    return "Stable or slow economies"
+        return "Below-median recovery, higher costs"
+    return "Below-median recovery, lower or mixed costs"
 
 
 def run_clustering(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
@@ -82,9 +82,12 @@ def run_clustering(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, 
     sizes = work["cluster"].value_counts()
     labels = {}
     for cluster, row in profile.iterrows():
-        economic_name = _economic_label(row, medians)
-        if sizes.loc[cluster] > len(work) / 2:
-            economic_name = "Lower-cost and less-volatile majority"
+        if sizes.loc[cluster] == 1:
+            economic_name = "Singleton pattern (interpret cautiously)"
+        elif sizes.loc[cluster] > len(work) / 2:
+            economic_name = "Other ASEAN economies (heterogeneous)"
+        else:
+            economic_name = _economic_label(row, medians)
         labels[cluster] = f"Cluster {cluster}: {economic_name}"
     work["cluster_label"] = work["cluster"].map(labels)
 
@@ -102,6 +105,7 @@ def run_clustering(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, 
         "method": str(best["method"]),
         "k": int(best["k"]),
         "silhouette": float(best["silhouette"]),
+        "has_singleton": bool(sizes.min() == 1),
         "labels": labels,
     }
     return result, evaluation, meta

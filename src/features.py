@@ -89,19 +89,18 @@ def build_transparent_ranking(features: pd.DataFrame) -> pd.DataFrame:
     debt_median = ranked["debt_cost"].median()
     ranked["tradeoff_profile"] = ranked.apply(
         lambda row: (
-            "High recovery + low inflation/debt cost"
+            "Above-median recovery + lower inflation/debt cost"
             if row["recovery_gap"] >= recovery_median
             and row["inflation_cost"] <= inflation_median
             and row["debt_cost"] <= debt_median
-            else "High recovery + high cost"
+            else "Above-median recovery + higher cost"
             if row["recovery_gap"] >= recovery_median
             and (row["inflation_cost"] > inflation_median or row["debt_cost"] > debt_median)
-            else "Weak recovery + high cost"
+            else "Below-median recovery + higher cost"
             if row["recovery_gap"] < recovery_median
             and (row["inflation_cost"] > inflation_median or row["debt_cost"] > debt_median)
-            else "Weak recovery + contained cost"
+            else "Below-median recovery + lower cost"
         ),
         axis=1,
     )
     return ranked.sort_values("recovery_gap", ascending=False).reset_index(drop=True)
-

@@ -7,6 +7,7 @@ import plotly.express as px
 import streamlit as st
 
 from src.clustering import run_clustering
+from src.features import build_transparent_ranking
 from src.config import (
     ASEAN_COUNTRIES,
     CLEAN_PATH,
@@ -95,12 +96,13 @@ def load_outputs() -> dict:
     if missing:
         raise FileNotFoundError("Run `python run_pipeline.py` first. Missing: " + ", ".join(missing))
     features = pd.read_csv(FEATURE_PATH)
+    ranking = build_transparent_ranking(features)
     clusters, cluster_eval, _ = run_clustering(features)
     return {
         "clean": pd.read_csv(CLEAN_PATH),
         "features": features,
         "coverage": pd.read_csv(COVERAGE_PATH),
-        "ranking": pd.read_csv(RANKING_PATH),
+        "ranking": ranking,
         "outliers": pd.read_csv(OUTLIER_PATH),
         "clusters": clusters,
         "cluster_eval": cluster_eval,
@@ -353,6 +355,11 @@ with tab_patterns:
         if cluster_view.empty:
             st.warning("Không đủ dữ liệu cho clustering.")
         else:
+            if not data["cluster_eval"]["economically_reviewable"].any():
+                st.warning(
+                    "Mọi phương án k=2…5 đều tạo ít nhất một cụm chỉ có 1 quốc gia. "
+                    "Vì vậy kết quả này chỉ mang tính khám phá, không phải phân loại ổn định của ASEAN-10."
+                )
             fig = px.scatter(
                 cluster_view,
                 x="pca_1",

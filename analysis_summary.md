@@ -36,16 +36,16 @@ The pipeline compares 2015–2019 with the 2020 shock and the 2021–2024 recove
 
 | country           |   covid_shock |   recovery_gap |   inflation_cost |   debt_cost |   unemployment_change |   current_account_change | tradeoff_profile                        |
 |:------------------|--------------:|---------------:|-----------------:|------------:|----------------------:|-------------------------:|:----------------------------------------|
-| Singapore         |         -6.72 |           2.12 |             3.81 |       38.36 |                  0.06 |                     0.67 | High recovery + high cost               |
-| Malaysia          |        -10.36 |           0.34 |             0.62 |       12.76 |                  0.46 |                    -0.38 | High recovery + low inflation/debt cost |
-| Brunei Darussalam |          0.66 |           0.01 |             1.62 |       -0.25 |                 -2.85 |                     2.62 | High recovery + low inflation/debt cost |
-| Indonesia         |         -7.10 |          -0.26 |            -1.03 |        9.60 |                  0.06 |                     2.35 | High recovery + low inflation/debt cost |
-| Philippines       |        -16.10 |          -0.45 |             2.24 |       19.65 |                 -0.24 |                    -2.81 | High recovery + high cost               |
-| Thailand          |         -9.51 |          -1.06 |             1.89 |       21.85 |                  0.26 |                    -8.38 | Weak recovery + high cost               |
-| Vietnam           |         -4.22 |          -1.31 |             0.33 |       -9.83 |                  0.26 |                     1.89 | Weak recovery + contained cost          |
-| Cambodia          |        -10.64 |          -2.82 |             0.49 |        4.90 |                nan    |                    -4.27 | Weak recovery + contained cost          |
-| Lao P.D.R.        |         -6.85 |          -3.35 |            18.46 |       25.55 |                nan    |                    11.17 | Weak recovery + high cost               |
-| Myanmar           |        -15.35 |          -8.31 |            16.06 |       13.02 |                nan    |                     2.26 | Weak recovery + high cost               |
+| Singapore         |         -6.72 |           2.12 |             3.81 |       38.36 |                  0.06 |                     0.67 | Above-median recovery + higher cost               |
+| Malaysia          |        -10.36 |           0.34 |             0.62 |       12.76 |                  0.46 |                    -0.38 | Above-median recovery + lower inflation/debt cost |
+| Brunei Darussalam |          0.66 |           0.01 |             1.62 |       -0.25 |                 -2.85 |                     2.62 | Above-median recovery + lower inflation/debt cost |
+| Indonesia         |         -7.10 |          -0.26 |            -1.03 |        9.60 |                  0.06 |                     2.35 | Above-median recovery + lower inflation/debt cost |
+| Philippines       |        -16.10 |          -0.45 |             2.24 |       19.65 |                 -0.24 |                    -2.81 | Above-median recovery + higher cost               |
+| Thailand          |         -9.51 |          -1.06 |             1.89 |       21.85 |                  0.26 |                    -8.38 | Below-median recovery + higher cost               |
+| Vietnam           |         -4.22 |          -1.31 |             0.33 |       -9.83 |                  0.26 |                     1.89 | Below-median recovery + lower cost                |
+| Cambodia          |        -10.64 |          -2.82 |             0.49 |        4.90 |                nan    |                    -4.27 | Below-median recovery + lower cost                |
+| Lao P.D.R.        |         -6.85 |          -3.35 |            18.46 |       25.55 |                nan    |                    11.17 | Below-median recovery + higher cost               |
+| Myanmar           |        -15.35 |          -8.31 |            16.06 |       13.02 |                nan    |                     2.26 | Below-median recovery + higher cost               |
 
 ## Strongest outliers
 
@@ -59,22 +59,22 @@ The pipeline compares 2015–2019 with the 2020 shock and the 2021–2024 recove
 
 ## Cluster interpretation
 
-Selected method: kmeans; k=2; silhouette=0.678.
-Features used: covid_shock, recovery_gap, inflation_cost, debt_cost, growth_volatility_post, unemployment_change, current_account_change.
-Cluster names were assigned only after examining cluster profiles.
+The dashboard recomputes KMeans and hierarchical solutions from complete-coverage features only: covid_shock, recovery_gap, inflation_cost, debt_cost, growth_volatility_post and current_account_change. LUR is excluded and no missing value is imputed.
+
+The leading solution separates Brunei as a one-country cluster. Treat this as an exploratory outlier pattern, not a stable ASEAN typology. The remaining nine economies are explicitly labeled heterogeneous rather than being assigned a common economic profile.
 
 | country           |   cluster | cluster_label                                    |
 |:------------------|----------:|:-------------------------------------------------|
-| Brunei Darussalam |         0 | Cluster 0: Resilient recoverers                  |
-| Cambodia          |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Indonesia         |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Lao P.D.R.        |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Malaysia          |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Myanmar           |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Philippines       |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Singapore         |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Thailand          |         1 | Cluster 1: Lower-cost and less-volatile majority |
-| Vietnam           |         1 | Cluster 1: Lower-cost and less-volatile majority |
+| Brunei Darussalam |         0 | Cluster 0: Singleton pattern (interpret cautiously) |
+| Cambodia          |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Indonesia         |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Lao P.D.R.        |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Malaysia          |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Myanmar           |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Philippines       |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Singapore         |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Thailand          |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
+| Vietnam           |         1 | Cluster 1: Other ASEAN economies (heterogeneous)    |
 
 ## Top three candidate stories
 

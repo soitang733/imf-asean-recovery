@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.data import build_coverage, build_sdmx_url, clean_sdmx
-from src.features import build_country_features
+from src.features import build_country_features, build_transparent_ranking
 from src.clustering import select_cluster_features
 
 
@@ -56,6 +56,20 @@ def test_incomplete_optional_feature_is_not_used_for_clustering():
     assert coverage["unemployment_change"] == 0.7
     assert "unemployment_change" not in selected
     assert "current_account_change" in selected
+
+
+def test_tradeoff_profile_names_the_median_rule():
+    features = pd.DataFrame(
+        {
+            "recovery_gap": [-1.0, 1.0],
+            "inflation_cost": [0.0, 2.0],
+            "debt_cost": [0.0, 2.0],
+            "unemployment_change": [0.0, 0.0],
+            "current_account_change": [0.0, 0.0],
+        }
+    )
+    ranked = build_transparent_ranking(features)
+    assert ranked["tradeoff_profile"].str.contains("median").all()
 
 
 def test_structure_specific_xml_parser_keeps_explicit_na(tmp_path: Path):

@@ -133,11 +133,12 @@ def write_summary(
             "## Limitations",
             "",
             "- WEO observations may be revised. This extract ends in 2024 and does not mix later forecasts into the analysis.",
-            "- Missing unemployment and current-account data reduce cross-country comparability; optional features enter clustering only when coverage is sufficient.",
+            "- Missing unemployment data reduce cross-country comparability. LUR is excluded from clustering because it lacks complete ASEAN-10 coverage; no value is imputed.",
             "- Gross debt is not net debt. Singapore is a notable institutional-comparability case.",
             "- Period averages can hide within-period turning points and base effects.",
             f"- Outlier results are sensitive to a sample of only {len(ASEAN_COUNTRIES)} countries.",
             "- Clusters summarize similarity; they do not prove common causes or future performance.",
+            "- If the selected solution contains a one-country cluster, treat it as an exploratory outlier pattern rather than a stable regional typology.",
             "",
         ]
     )
