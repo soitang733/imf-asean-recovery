@@ -17,5 +17,17 @@
     "LAO": {"series": 0, "observations": 0},
     "MMR": {"series": 0, "observations": 0}
   },
+  "sdmx_3_validation": {
+    "endpoint": "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/BRN+KHM+IDN+LAO+MYS+MMR+PHL+SGP+THA+VNM.NGDP_RPCH+PCPIPCH+GGXWDG_NGDP+LUR+BCA_NGDPD.A",
+    "format": "jsondata",
+    "raw_file": "data/raw_imf_weo_sdmx3.json",
+    "raw_sha256": "A2387C42D567A7071068FF2A87C60BB35AB811D0B3E16383C45B47E35ABC006B",
+    "total_series": 47,
+    "observations_2015_2024": 470,
+    "lur_observations_2015_2024": 70,
+    "lur_countries": ["BRN", "IDN", "MYS", "PHL", "SGP", "THA", "VNM"],
+    "missing_lur_countries": ["KHM", "LAO", "MMR"],
+    "note": "SDMX 3.0 returns the same analytical coverage as SDMX 2.1. The supplied comparison script requests only six countries, all of which have LUR observations; it does not request KHM, LAO or MMR."
+  },
   "note": "Individual IMF SDMX queries for KHM.LUR.A, LAO.LUR.A and MMR.LUR.A returned HTTP 200 with zero Series and zero Obs. No alternative source or imputation was used."
 }

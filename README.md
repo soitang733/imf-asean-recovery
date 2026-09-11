@@ -60,6 +60,7 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `data/clean_imf_weo.csv`: full grid 10 × 5 × 10; quan sát IMF không có được giữ là NA.
 - `data/metadata.json`: metadata của lần lấy dữ liệu.
 - `data/crawl_audit.json`: checksum và kết quả kiểm tra crawl lại, gồm các truy vấn LUR tách riêng.
+- `data/raw_imf_weo_sdmx3.json`: response SDMX 3.0 dùng để đối chiếu; không thay thế nguồn SDMX 2.1 chính vì coverage 2015–2024 giống nhau.
 - `outputs/data_coverage.csv`: coverage theo country × indicator.
 - `data/country_features.csv`: biến phân tích dẫn xuất.
 - `outputs/data_coverage.csv`, `outputs/outliers.csv` và `outputs/candidate_stories.csv`: đầu ra kiểm tra và phân tích đã lưu.
