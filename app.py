@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from src import config as project_config
 from src.clustering import run_clustering
 from src.features import build_transparent_ranking
 from src.config import (
@@ -16,8 +18,21 @@ from src.config import (
     METADATA_PATH,
     OUTLIER_PATH,
     STORY_PATH,
-    WB_COMPARISON_PATH,
-    WB_SUMMARY_PATH,
+)
+
+# Resolve the optional cross-check files locally so a Streamlit process that
+# still has an older ``src.config`` module cached can start without ImportError.
+_PROJECT_ROOT = Path(__file__).resolve().parent
+_CROSSCHECK_DIR = _PROJECT_ROOT / "data" / "crosscheck"
+WB_COMPARISON_PATH = getattr(
+    project_config,
+    "WB_COMPARISON_PATH",
+    _CROSSCHECK_DIR / "imf_worldbank_gdp_growth_comparison.csv",
+)
+WB_SUMMARY_PATH = getattr(
+    project_config,
+    "WB_SUMMARY_PATH",
+    _CROSSCHECK_DIR / "imf_worldbank_gdp_growth_summary.csv",
 )
 
 
