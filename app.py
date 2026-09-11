@@ -11,13 +11,10 @@ from src.features import build_transparent_ranking
 from src.config import (
     ASEAN_COUNTRIES,
     CLEAN_PATH,
-    CLUSTER_EVAL_PATH,
-    CLUSTER_PATH,
     COVERAGE_PATH,
     FEATURE_PATH,
     METADATA_PATH,
     OUTLIER_PATH,
-    RANKING_PATH,
     STORY_PATH,
 )
 
@@ -86,9 +83,7 @@ def load_outputs() -> dict:
         CLEAN_PATH,
         FEATURE_PATH,
         COVERAGE_PATH,
-        RANKING_PATH,
         OUTLIER_PATH,
-        CLUSTER_PATH,
         STORY_PATH,
         METADATA_PATH,
     ]

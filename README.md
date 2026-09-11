@@ -61,7 +61,7 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `data/metadata.json`: metadata của lần lấy dữ liệu.
 - `outputs/data_coverage.csv`: coverage theo country × indicator.
 - `data/country_features.csv`: biến phân tích dẫn xuất.
-- `outputs/candidate_stories.csv` và `outputs/figures/*.png`: đầu ra phân tích.
+- `outputs/data_coverage.csv`, `outputs/outliers.csv` và `outputs/candidate_stories.csv`: đầu ra kiểm tra và phân tích đã lưu.
 - `docs/report_vi.md`: báo cáo diễn giải tiếng Việt đã đối chiếu với dữ liệu.
 
 ## Kiến trúc mã
@@ -76,5 +76,6 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `docs/design_review.md`: các nguyên tắc thiết kế học từ bài tham khảo và cách chuyển sang đề tài IMF.
 
 Clustering chỉ dùng các đặc trưng có coverage đầy đủ cho cả ASEAN-10; không điền giá trị thiếu. Nhãn recovery profile là so với trung vị của mẫu, không đồng nghĩa recovery gap dương.
+Dashboard tính lại ranking và clustering trực tiếp từ `data/country_features.csv`, nên repository không giữ các CSV ranking/clustering cũ có thể gây nhầm lẫn. Chạy pipeline đầy đủ sẽ tái tạo các output này bằng logic hiện hành.
 
 WEO April 2026 có `PUBLICATION_DATE=2026-04-14` trong SDMX response. Số version kỹ thuật bên trong dataflow vẫn có thể được IMF biểu diễn riêng; URL dùng `+` để tránh khóa pipeline vào một version cũ.

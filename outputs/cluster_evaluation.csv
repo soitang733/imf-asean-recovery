@@ -1,9 +1,0 @@
-﻿method,k,silhouette,smallest_cluster,economically_reviewable
-kmeans,2,0.6783890392521866,1,False
-hierarchical,2,0.6783890392521866,1,False
-kmeans,3,0.4334101258145191,1,False
-hierarchical,3,0.4334101258145191,1,False
-kmeans,4,0.3671432860187547,1,False
-hierarchical,4,0.3671432860187547,1,False
-kmeans,5,0.13168864656159157,1,False
-hierarchical,5,0.13168864656159157,1,False
