@@ -1,10 +1,8 @@
 # ASEAN-10 post-COVID recovery pipeline
 
-[![Live dashboard](https://img.shields.io/badge/Live_dashboard-open-0F766E)](https://soitang733.github.io/imf-asean-recovery/)
-
 Pipeline Python phân tích IMF World Economic Outlook (WEO), vintage April 2026, cho ASEAN-10. IMF SDMX 2.1 API là nguồn dữ liệu duy nhất của dataset phân tích chính; DataMapper không được sử dụng.
 
-**Public dashboard:** https://soitang733.github.io/imf-asean-recovery/
+**Deploy Streamlit Cloud:** repo `soitang733/imf-asean-recovery`, entrypoint `streamlit_app.py`, branch `main`.
 
 ## Phạm vi dữ liệu
 
