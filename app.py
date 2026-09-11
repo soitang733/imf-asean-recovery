@@ -558,25 +558,71 @@ with tab_patterns:
     story_features = features.set_index("country_code")
     lao = story_features.loc["LAO"]
     singapore = story_features.loc["SGP"]
+    asean_median_shock = features["covid_shock"].median()
+    asean_median_gap = features["recovery_gap"].median()
+    asean_median_inflation = features["inflation_cost"].median()
+    asean_median_debt = features["debt_cost"].median()
+    below_baseline_count = int((features["recovery_gap"] < 0).sum())
+    recovery_order = features["recovery_gap"].rank(ascending=False, method="min")
+    singapore_rank = int(recovery_order[features["country_code"] == "SGP"].iloc[0])
+    lao_rank = int(recovery_order[features["country_code"] == "LAO"].iloc[0])
+    inflation_order = features["inflation_cost"].rank(ascending=False, method="min")
+    lao_inflation_rank = int(inflation_order[features["country_code"] == "LAO"].iloc[0])
 
     st.subheader("Cùng một cú sốc, hai quỹ đạo phục hồi")
     st.markdown(
-        "Câu chuyện dữ liệu tập trung vào **Lào và Singapore**—hai nền kinh tế chịu cú sốc tăng trưởng "
-        "năm 2020 gần tương đương, nhưng đi theo hai quỹ đạo khác biệt trong bốn năm tiếp theo. "
-        "Cách tiếp cận này so sánh mỗi quốc gia với chính đường cơ sở trước đại dịch của mình."
+        "**Một con số gần giống nhau vào năm 2020 đã mở ra hai kết quả rất khác nhau sau đó.** "
+        "Câu chuyện dữ liệu tập trung vào Lào và Singapore—hai nền kinh tế chịu cú sốc tăng trưởng gần tương đương, "
+        "nhưng đi theo hai quỹ đạo khác biệt trong bốn năm tiếp theo. Thay vì hỏi nước nào tăng trưởng cao nhất, "
+        "phân tích hỏi một câu chặt chẽ hơn: *mỗi nền kinh tế phục hồi đến đâu so với chính nhịp độ trước đại dịch của mình?*"
     )
 
-    st.markdown("### 1. Điểm xuất phát: mức thiệt hại ban đầu gần tương đương")
+    st.markdown("### Bối cảnh: phần lớn ASEAN-10 chưa trở lại nhịp tăng trưởng cũ")
+    b1, b2, b3 = st.columns(3)
+    b1.metric("Cú sốc trung vị năm 2020", f"{asean_median_shock:.2f} điểm %")
+    b2.metric("Khoảng cách phục hồi trung vị", f"{asean_median_gap:.2f} điểm %")
+    b3.metric("Nền kinh tế dưới đường cơ sở", f"{below_baseline_count}/10")
+    st.write(
+        f"Dữ liệu cho thấy cú sốc trung vị của khu vực đạt {asean_median_shock:.2f} điểm phần trăm. "
+        f"Trong giai đoạn 2021–2024, {below_baseline_count} trên 10 nền kinh tế vẫn có tốc độ tăng trưởng bình quân "
+        "thấp hơn giai đoạn 2015–2019. Vì vậy, tăng trưởng dương sau năm 2020 chưa đủ để kết luận rằng một quốc gia "
+        "đã phục hồi hoàn toàn."
+    )
+
+    recovery_context = add_country_vi(features).sort_values("recovery_gap")
+    recovery_context["Nhóm hiển thị"] = recovery_context["country_code"].map(
+        {"LAO": "Lào", "SGP": "Singapore"}
+    ).fillna("Các nước ASEAN khác")
+    fig = px.bar(
+        recovery_context,
+        x="recovery_gap",
+        y="Quốc gia",
+        color="Nhóm hiển thị",
+        orientation="h",
+        color_discrete_map={"Lào": "#dc2626", "Singapore": "#0f766e", "Các nước ASEAN khác": "#94a3b8"},
+        labels={"recovery_gap": "Khoảng cách phục hồi (điểm phần trăm)", "Nhóm hiển thị": ""},
+        title="Khoảng cách phục hồi của ASEAN-10 so với đường cơ sở 2015–2019",
+    )
+    fig.add_vline(x=0, line_dash="dash", line_color="#334155")
+    fig.update_layout(legend_orientation="h", legend_y=1.1, margin=dict(t=70, b=20))
+    st.plotly_chart(fig, width="stretch")
+    st.caption(
+        "Giá trị dương cho biết tăng trưởng bình quân 2021–2024 cao hơn mức bình quân 2015–2019; "
+        "giá trị âm cho biết tốc độ tăng trưởng chưa trở lại đường cơ sở."
+    )
+
+    st.markdown("### Chương 1 · Điểm xuất phát: mức thiệt hại ban đầu gần tương đương")
     c1, c2 = st.columns(2)
     c1.metric("Cú sốc tăng trưởng của Lào", f"{lao['covid_shock']:.2f} điểm %")
     c2.metric("Cú sốc tăng trưởng của Singapore", f"{singapore['covid_shock']:.2f} điểm %")
     st.write(
         "Chênh lệch giữa hai mức suy giảm chỉ khoảng "
         f"{abs(lao['covid_shock'] - singapore['covid_shock']):.2f} điểm phần trăm. "
-        "Nếu chỉ quan sát năm 2020, hai quốc gia có vẻ đã chịu tổn thương với quy mô khá giống nhau."
+        "Nếu dừng phân tích tại năm 2020, hai quốc gia có vẻ đã chịu tổn thương với quy mô khá giống nhau. "
+        "Chính điểm xuất phát gần nhau này tạo ra một phép so sánh giàu thông tin cho giai đoạn tiếp theo."
     )
 
-    st.markdown("### 2. Bước ngoặt: quỹ đạo tăng trưởng phân hóa sau năm 2020")
+    st.markdown("### Chương 2 · Bước ngoặt: quỹ đạo tăng trưởng phân hóa sau năm 2020")
     story_series = add_country_vi(
         clean[
             clean["country_code"].isin(["LAO", "SGP"])
@@ -617,10 +663,12 @@ with tab_patterns:
     st.write(
         f"Lào đã trở lại tăng trưởng dương, nhưng tốc độ bình quân giai đoạn 2021–2024 vẫn thấp hơn đường cơ sở "
         f"{abs(lao['recovery_gap']):.2f} điểm phần trăm. Ngược lại, tăng trưởng bình quân của Singapore cao hơn "
-        f"đường cơ sở {singapore['recovery_gap']:.2f} điểm. Đây là điểm phân hóa trung tâm của bộ dữ liệu."
+        f"đường cơ sở {singapore['recovery_gap']:.2f} điểm. Xét trong ASEAN-10, Singapore đứng thứ "
+        f"{singapore_rank} theo khoảng cách phục hồi, trong khi Lào đứng thứ {lao_rank}. Khoảng cách "
+        f"{abs(singapore['recovery_gap'] - lao['recovery_gap']):.2f} điểm giữa hai nước là nút thắt chính của câu chuyện."
     )
 
-    st.markdown("### 3. Phục hồi không chỉ là tăng trưởng: chi phí vĩ mô cũng khác biệt")
+    st.markdown("### Chương 3 · Phục hồi không chỉ là tăng trưởng: chi phí vĩ mô cũng khác biệt")
     story_costs = pd.DataFrame(
         [
             {
@@ -653,19 +701,69 @@ with tab_patterns:
         "thay đổi lạm phát được tính giữa hai giai đoạn; thay đổi nợ công = mức năm 2024 trừ năm 2019. "
         "Đơn vị: điểm phần trăm; nợ công là điểm phần trăm GDP."
     )
+    cost_context = pd.DataFrame(
+        [
+            ["Lào", "Thay đổi lạm phát", lao["inflation_cost"]],
+            ["Singapore", "Thay đổi lạm phát", singapore["inflation_cost"]],
+            ["Trung vị ASEAN-10", "Thay đổi lạm phát", asean_median_inflation],
+            ["Lào", "Thay đổi nợ công", lao["debt_cost"]],
+            ["Singapore", "Thay đổi nợ công", singapore["debt_cost"]],
+            ["Trung vị ASEAN-10", "Thay đổi nợ công", asean_median_debt],
+        ],
+        columns=["Đối tượng", "Chỉ tiêu", "Giá trị"],
+    )
+    fig = px.bar(
+        cost_context,
+        x="Đối tượng",
+        y="Giá trị",
+        color="Đối tượng",
+        facet_col="Chỉ tiêu",
+        color_discrete_map={"Lào": "#dc2626", "Singapore": "#0f766e", "Trung vị ASEAN-10": "#94a3b8"},
+        labels={"Giá trị": "Mức thay đổi (điểm phần trăm)"},
+        title="Đặt các chi phí vĩ mô vào bối cảnh khu vực",
+    )
+    fig.for_each_annotation(lambda annotation: annotation.update(text=annotation.text.split("=")[-1]))
+    fig.update_layout(showlegend=False, margin=dict(t=70, b=20))
+    st.plotly_chart(fig, width="stretch")
     st.write(
         f"Đối với Lào, khoảng cách phục hồi âm xuất hiện đồng thời với mức tăng lạm phát "
-        f"{lao['inflation_cost']:.2f} điểm phần trăm và mức tăng tỷ lệ nợ công "
-        f"{lao['debt_cost']:.2f} điểm phần trăm GDP. Các chỉ tiêu này cho thấy việc đánh giá phục hồi "
-        "chỉ dựa trên tăng trưởng dương có thể bỏ qua những mất cân đối vĩ mô đi kèm."
+        f"{lao['inflation_cost']:.2f} điểm phần trăm—đứng thứ {lao_inflation_rank} trong ASEAN-10—và mức tăng tỷ lệ nợ công "
+        f"{lao['debt_cost']:.2f} điểm phần trăm GDP. Mức tăng lạm phát này lớn gấp khoảng "
+        f"{lao['inflation_cost'] / asean_median_inflation:.1f} lần trung vị khu vực. Các chỉ tiêu cho thấy "
+        "việc đánh giá phục hồi chỉ dựa trên tăng trưởng dương có thể bỏ qua các sức ép vĩ mô đi kèm."
     )
 
-    st.markdown("### 4. Thông điệp rút ra từ dữ liệu")
+    st.info(
+        f"Một chi tiết cần đọc thận trọng: Singapore có mức tăng nợ công gộp "
+        f"{singapore['debt_cost']:.2f} điểm phần trăm GDP, cao hơn Lào. Tuy nhiên, chỉ tiêu nợ gộp không phản ánh "
+        "tài sản tài chính của chính phủ. Trường hợp này minh họa vì sao dashboard không cộng các biến thành "
+        "một điểm phục hồi tổng hợp."
+    )
+
+    st.markdown("### Chương 4 · Mở rộng góc nhìn: ngoại lệ Myanmar đặt ra giới hạn so sánh")
+    myanmar = story_features.loc["MMR"]
+    st.write(
+        f"Myanmar ghi nhận khoảng cách phục hồi {myanmar['recovery_gap']:+.2f} điểm phần trăm và độ biến động "
+        f"tăng trưởng sau dịch {myanmar['growth_volatility_post']:.2f}—mức cao nhất trong mẫu. Trường hợp này "
+        "cho thấy không phải mọi khác biệt sau năm 2020 đều có thể được quy về cú sốc y tế chung. Các cú sốc "
+        "đặc thù quốc gia có thể làm suy giảm khả năng so sánh trực tiếp và cần được phân tích bằng nguồn dữ liệu bổ sung."
+    )
+
+    st.markdown("### Chương 5 · Thông điệp rút ra từ dữ liệu")
     st.success(
         "Quy mô cú sốc ban đầu không đủ để dự báo kết quả phục hồi. Trong trường hợp Lào và Singapore, "
         "mức thiệt hại năm 2020 gần tương đương nhưng khoảng cách phục hồi và các chỉ tiêu chi phí vĩ mô "
         "phân hóa rõ rệt. Vì vậy, khả năng phục hồi cần được đánh giá đồng thời trên nhiều chiều, thay vì "
         "chỉ dựa vào tốc độ tăng trưởng sau khủng hoảng."
+    )
+    st.markdown(
+        """
+        **Ba điều dữ liệu giúp làm rõ:**
+
+        1. **Mức nền quan trọng.** Một con số tăng trưởng dương có thể vẫn thấp hơn đáng kể so với năng lực tăng trưởng trước khủng hoảng.
+        2. **Phục hồi là khái niệm đa chiều.** Tăng trưởng, lạm phát, nợ công, thất nghiệp và cân đối đối ngoại có thể phát tín hiệu khác nhau.
+        3. **Không tồn tại một “quốc gia chiến thắng” tuyệt đối.** Kết quả phụ thuộc vào thước đo được lựa chọn và bối cảnh thể chế của từng nền kinh tế.
+        """
     )
     st.warning(
         "Phân tích này mang tính mô tả. Dữ liệu cho thấy các biến số diễn biến đồng thời nhưng không xác định "
@@ -682,7 +780,11 @@ with tab_patterns:
                 ["Lào", "Khoảng cách phục hồi", lao["recovery_gap"], "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
                 ["Singapore", "Khoảng cách phục hồi", singapore["recovery_gap"], "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
                 ["Lào", "Thay đổi lạm phát", lao["inflation_cost"], "PCPIPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
+                ["Singapore", "Thay đổi lạm phát", singapore["inflation_cost"], "PCPIPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
                 ["Lào", "Thay đổi nợ công", lao["debt_cost"], "GGXWDG_NGDP", "Năm 2024 − năm 2019"],
+                ["Singapore", "Thay đổi nợ công", singapore["debt_cost"], "GGXWDG_NGDP", "Năm 2024 − năm 2019"],
+                ["Myanmar", "Khoảng cách phục hồi", myanmar["recovery_gap"], "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
+                ["Myanmar", "Biến động tăng trưởng sau dịch", myanmar["growth_volatility_post"], "NGDP_RPCH", "Độ lệch chuẩn 2021–2024"],
             ],
             columns=["Quốc gia", "Biến phân tích", "Giá trị", "Chỉ tiêu IMF", "Phương pháp tính"],
         )
