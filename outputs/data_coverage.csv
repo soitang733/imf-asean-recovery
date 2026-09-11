@@ -1,0 +1,51 @@
+﻿country_code,country,indicator_code,available_2015_2024,coverage_2015_2024,missing_years,serious_gap
+BRN,Brunei Darussalam,NGDP_RPCH,10,1.0,,False
+BRN,Brunei Darussalam,PCPIPCH,10,1.0,,False
+BRN,Brunei Darussalam,GGXWDG_NGDP,10,1.0,,False
+BRN,Brunei Darussalam,LUR,10,1.0,,False
+BRN,Brunei Darussalam,BCA_NGDPD,10,1.0,,False
+KHM,Cambodia,NGDP_RPCH,10,1.0,,False
+KHM,Cambodia,PCPIPCH,10,1.0,,False
+KHM,Cambodia,GGXWDG_NGDP,10,1.0,,False
+KHM,Cambodia,LUR,0,0.0,"2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",True
+KHM,Cambodia,BCA_NGDPD,10,1.0,,False
+IDN,Indonesia,NGDP_RPCH,10,1.0,,False
+IDN,Indonesia,PCPIPCH,10,1.0,,False
+IDN,Indonesia,GGXWDG_NGDP,10,1.0,,False
+IDN,Indonesia,LUR,10,1.0,,False
+IDN,Indonesia,BCA_NGDPD,10,1.0,,False
+LAO,Lao P.D.R.,NGDP_RPCH,10,1.0,,False
+LAO,Lao P.D.R.,PCPIPCH,10,1.0,,False
+LAO,Lao P.D.R.,GGXWDG_NGDP,10,1.0,,False
+LAO,Lao P.D.R.,LUR,0,0.0,"2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",True
+LAO,Lao P.D.R.,BCA_NGDPD,10,1.0,,False
+MYS,Malaysia,NGDP_RPCH,10,1.0,,False
+MYS,Malaysia,PCPIPCH,10,1.0,,False
+MYS,Malaysia,GGXWDG_NGDP,10,1.0,,False
+MYS,Malaysia,LUR,10,1.0,,False
+MYS,Malaysia,BCA_NGDPD,10,1.0,,False
+MMR,Myanmar,NGDP_RPCH,10,1.0,,False
+MMR,Myanmar,PCPIPCH,10,1.0,,False
+MMR,Myanmar,GGXWDG_NGDP,10,1.0,,False
+MMR,Myanmar,LUR,0,0.0,"2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",True
+MMR,Myanmar,BCA_NGDPD,10,1.0,,False
+PHL,Philippines,NGDP_RPCH,10,1.0,,False
+PHL,Philippines,PCPIPCH,10,1.0,,False
+PHL,Philippines,GGXWDG_NGDP,10,1.0,,False
+PHL,Philippines,LUR,10,1.0,,False
+PHL,Philippines,BCA_NGDPD,10,1.0,,False
+SGP,Singapore,NGDP_RPCH,10,1.0,,False
+SGP,Singapore,PCPIPCH,10,1.0,,False
+SGP,Singapore,GGXWDG_NGDP,10,1.0,,False
+SGP,Singapore,LUR,10,1.0,,False
+SGP,Singapore,BCA_NGDPD,10,1.0,,False
+THA,Thailand,NGDP_RPCH,10,1.0,,False
+THA,Thailand,PCPIPCH,10,1.0,,False
+THA,Thailand,GGXWDG_NGDP,10,1.0,,False
+THA,Thailand,LUR,10,1.0,,False
+THA,Thailand,BCA_NGDPD,10,1.0,,False
+VNM,Vietnam,NGDP_RPCH,10,1.0,,False
+VNM,Vietnam,PCPIPCH,10,1.0,,False
+VNM,Vietnam,GGXWDG_NGDP,10,1.0,,False
+VNM,Vietnam,LUR,10,1.0,,False
+VNM,Vietnam,BCA_NGDPD,10,1.0,,False

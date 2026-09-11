@@ -1,0 +1,12 @@
+{
+  "dataset": "IMF World Economic Outlook",
+  "dataset_code": "WEO",
+  "provider": "IMF.RES",
+  "vintage": "April 2026",
+  "retrieved_at": "2026-09-11",
+  "api_family": "IMF SDMX 2.1 API",
+  "frequency": "Annual",
+  "historical_analysis_period": "2015-2024",
+  "countries_count": 10,
+  "indicators_count": 5
+}

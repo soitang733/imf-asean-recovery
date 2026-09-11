@@ -1,0 +1,6 @@
+﻿country_code,country,feature,value,z_score,classification,economic_direction
+MMR,Myanmar,growth_volatility_post,6.979706483597257,2.5395509285164057,negative_outlier,lower_is_better
+MMR,Myanmar,recovery_gap,-8.30758485,-2.5134324851508576,negative_outlier,higher_is_better
+BRN,Brunei Darussalam,unemployment_change,-2.8527731999999997,-2.4053875217141645,positive_outlier,lower_is_better
+LAO,Lao P.D.R.,current_account_change,11.172488399999999,2.1748016009105577,positive_outlier,higher_is_better
+LAO,Lao P.D.R.,inflation_cost,18.456214100000004,2.1406204652278062,negative_outlier,lower_is_better

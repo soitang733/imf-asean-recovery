@@ -1,0 +1,501 @@
+﻿country_code,country,year,indicator_code,indicator_name,value,frequency
+BRN,Brunei Darussalam,2015,BCA_NGDPD,Current account balance,16.675069,A
+BRN,Brunei Darussalam,2016,BCA_NGDPD,Current account balance,12.890667,A
+BRN,Brunei Darussalam,2017,BCA_NGDPD,Current account balance,16.359561,A
+BRN,Brunei Darussalam,2018,BCA_NGDPD,Current account balance,6.929503,A
+BRN,Brunei Darussalam,2019,BCA_NGDPD,Current account balance,6.634084,A
+BRN,Brunei Darussalam,2020,BCA_NGDPD,Current account balance,4.278245,A
+BRN,Brunei Darussalam,2021,BCA_NGDPD,Current account balance,11.137332,A
+BRN,Brunei Darussalam,2022,BCA_NGDPD,Current account balance,19.513273,A
+BRN,Brunei Darussalam,2023,BCA_NGDPD,Current account balance,12.873626,A
+BRN,Brunei Darussalam,2024,BCA_NGDPD,Current account balance,14.540127,A
+BRN,Brunei Darussalam,2015,GGXWDG_NGDP,General government gross debt,2.953087,A
+BRN,Brunei Darussalam,2016,GGXWDG_NGDP,General government gross debt,3.004879,A
+BRN,Brunei Darussalam,2017,GGXWDG_NGDP,General government gross debt,2.58185,A
+BRN,Brunei Darussalam,2018,GGXWDG_NGDP,General government gross debt,1.898839,A
+BRN,Brunei Darussalam,2019,GGXWDG_NGDP,General government gross debt,1.820954,A
+BRN,Brunei Darussalam,2020,GGXWDG_NGDP,General government gross debt,2.158238,A
+BRN,Brunei Darussalam,2021,GGXWDG_NGDP,General government gross debt,1.434489,A
+BRN,Brunei Darussalam,2022,GGXWDG_NGDP,General government gross debt,1.325908,A
+BRN,Brunei Darussalam,2023,GGXWDG_NGDP,General government gross debt,1.6721,A
+BRN,Brunei Darussalam,2024,GGXWDG_NGDP,General government gross debt,1.568124,A
+BRN,Brunei Darussalam,2015,LUR,Unemployment rate,7.64657,A
+BRN,Brunei Darussalam,2016,LUR,Unemployment rate,8.342296,A
+BRN,Brunei Darussalam,2017,LUR,Unemployment rate,9.0,A
+BRN,Brunei Darussalam,2018,LUR,Unemployment rate,7.7,A
+BRN,Brunei Darussalam,2019,LUR,Unemployment rate,6.7,A
+BRN,Brunei Darussalam,2020,LUR,Unemployment rate,7.3,A
+BRN,Brunei Darussalam,2021,LUR,Unemployment rate,4.9,A
+BRN,Brunei Darussalam,2022,LUR,Unemployment rate,5.2,A
+BRN,Brunei Darussalam,2023,LUR,Unemployment rate,5.2,A
+BRN,Brunei Darussalam,2024,LUR,Unemployment rate,4.8,A
+BRN,Brunei Darussalam,2015,NGDP_RPCH,Real GDP growth,-0.392381,A
+BRN,Brunei Darussalam,2016,NGDP_RPCH,Real GDP growth,-2.477916,A
+BRN,Brunei Darussalam,2017,NGDP_RPCH,Real GDP growth,1.328727,A
+BRN,Brunei Darussalam,2018,NGDP_RPCH,Real GDP growth,0.052368,A
+BRN,Brunei Darussalam,2019,NGDP_RPCH,Real GDP growth,3.868844,A
+BRN,Brunei Darussalam,2020,NGDP_RPCH,Real GDP growth,1.133575,A
+BRN,Brunei Darussalam,2021,NGDP_RPCH,Real GDP growth,-1.590763,A
+BRN,Brunei Darussalam,2022,NGDP_RPCH,Real GDP growth,-1.62833,A
+BRN,Brunei Darussalam,2023,NGDP_RPCH,Real GDP growth,1.12764,A
+BRN,Brunei Darussalam,2024,NGDP_RPCH,Real GDP growth,4.05252,A
+BRN,Brunei Darussalam,2015,PCPIPCH,"Inflation, average consumer prices",-0.463108,A
+BRN,Brunei Darussalam,2016,PCPIPCH,"Inflation, average consumer prices",-0.278693,A
+BRN,Brunei Darussalam,2017,PCPIPCH,"Inflation, average consumer prices",-1.260506,A
+BRN,Brunei Darussalam,2018,PCPIPCH,"Inflation, average consumer prices",0.918547,A
+BRN,Brunei Darussalam,2019,PCPIPCH,"Inflation, average consumer prices",-0.285386,A
+BRN,Brunei Darussalam,2020,PCPIPCH,"Inflation, average consumer prices",1.937488,A
+BRN,Brunei Darussalam,2021,PCPIPCH,"Inflation, average consumer prices",1.736227,A
+BRN,Brunei Darussalam,2022,PCPIPCH,"Inflation, average consumer prices",3.683033,A
+BRN,Brunei Darussalam,2023,PCPIPCH,"Inflation, average consumer prices",0.35654,A
+BRN,Brunei Darussalam,2024,PCPIPCH,"Inflation, average consumer prices",-0.388555,A
+IDN,Indonesia,2015,BCA_NGDPD,Current account balance,-2.035007,A
+IDN,Indonesia,2016,BCA_NGDPD,Current account balance,-1.819278,A
+IDN,Indonesia,2017,BCA_NGDPD,Current account balance,-1.594726,A
+IDN,Indonesia,2018,BCA_NGDPD,Current account balance,-2.939108,A
+IDN,Indonesia,2019,BCA_NGDPD,Current account balance,-2.705665,A
+IDN,Indonesia,2020,BCA_NGDPD,Current account balance,-0.41861,A
+IDN,Indonesia,2021,BCA_NGDPD,Current account balance,0.29589,A
+IDN,Indonesia,2022,BCA_NGDPD,Current account balance,1.001829,A
+IDN,Indonesia,2023,BCA_NGDPD,Current account balance,-0.1489,A
+IDN,Indonesia,2024,BCA_NGDPD,Current account balance,-0.614731,A
+IDN,Indonesia,2015,GGXWDG_NGDP,General government gross debt,27.013304,A
+IDN,Indonesia,2016,GGXWDG_NGDP,General government gross debt,27.955461,A
+IDN,Indonesia,2017,GGXWDG_NGDP,General government gross debt,29.395537,A
+IDN,Indonesia,2018,GGXWDG_NGDP,General government gross debt,30.422723,A
+IDN,Indonesia,2019,GGXWDG_NGDP,General government gross debt,30.563455,A
+IDN,Indonesia,2020,GGXWDG_NGDP,General government gross debt,39.747126,A
+IDN,Indonesia,2021,GGXWDG_NGDP,General government gross debt,41.140307,A
+IDN,Indonesia,2022,GGXWDG_NGDP,General government gross debt,40.140611,A
+IDN,Indonesia,2023,GGXWDG_NGDP,General government gross debt,39.601362,A
+IDN,Indonesia,2024,GGXWDG_NGDP,General government gross debt,40.164815,A
+IDN,Indonesia,2015,LUR,Unemployment rate,6.18,A
+IDN,Indonesia,2016,LUR,Unemployment rate,5.61,A
+IDN,Indonesia,2017,LUR,Unemployment rate,5.5,A
+IDN,Indonesia,2018,LUR,Unemployment rate,5.34,A
+IDN,Indonesia,2019,LUR,Unemployment rate,5.28,A
+IDN,Indonesia,2020,LUR,Unemployment rate,7.07,A
+IDN,Indonesia,2021,LUR,Unemployment rate,6.49,A
+IDN,Indonesia,2022,LUR,Unemployment rate,5.86,A
+IDN,Indonesia,2023,LUR,Unemployment rate,5.32,A
+IDN,Indonesia,2024,LUR,Unemployment rate,4.91,A
+IDN,Indonesia,2015,NGDP_RPCH,Real GDP growth,4.876322,A
+IDN,Indonesia,2016,NGDP_RPCH,Real GDP growth,5.033069,A
+IDN,Indonesia,2017,NGDP_RPCH,Real GDP growth,5.069786,A
+IDN,Indonesia,2018,NGDP_RPCH,Real GDP growth,5.174292,A
+IDN,Indonesia,2019,NGDP_RPCH,Real GDP growth,5.019288,A
+IDN,Indonesia,2020,NGDP_RPCH,Real GDP growth,-2.065512,A
+IDN,Indonesia,2021,NGDP_RPCH,Real GDP growth,3.702886,A
+IDN,Indonesia,2022,NGDP_RPCH,Real GDP growth,5.307197,A
+IDN,Indonesia,2023,NGDP_RPCH,Real GDP growth,5.048831,A
+IDN,Indonesia,2024,NGDP_RPCH,Real GDP growth,5.032575,A
+IDN,Indonesia,2015,PCPIPCH,"Inflation, average consumer prices",6.360401,A
+IDN,Indonesia,2016,PCPIPCH,"Inflation, average consumer prices",3.529931,A
+IDN,Indonesia,2017,PCPIPCH,"Inflation, average consumer prices",3.807144,A
+IDN,Indonesia,2018,PCPIPCH,"Inflation, average consumer prices",3.291214,A
+IDN,Indonesia,2019,PCPIPCH,"Inflation, average consumer prices",2.822033,A
+IDN,Indonesia,2020,PCPIPCH,"Inflation, average consumer prices",2.031457,A
+IDN,Indonesia,2021,PCPIPCH,"Inflation, average consumer prices",1.560903,A
+IDN,Indonesia,2022,PCPIPCH,"Inflation, average consumer prices",4.138643,A
+IDN,Indonesia,2023,PCPIPCH,"Inflation, average consumer prices",3.7125,A
+IDN,Indonesia,2024,PCPIPCH,"Inflation, average consumer prices",2.299626,A
+KHM,Cambodia,2015,BCA_NGDPD,Current account balance,-7.288136,A
+KHM,Cambodia,2016,BCA_NGDPD,Current account balance,-6.866747,A
+KHM,Cambodia,2017,BCA_NGDPD,Current account balance,-6.510295,A
+KHM,Cambodia,2018,BCA_NGDPD,Current account balance,-8.99044,A
+KHM,Cambodia,2019,BCA_NGDPD,Current account balance,-8.347472,A
+KHM,Cambodia,2020,BCA_NGDPD,Current account balance,-0.980462,A
+KHM,Cambodia,2021,BCA_NGDPD,Current account balance,-30.096711,A
+KHM,Cambodia,2022,BCA_NGDPD,Current account balance,-19.189332,A
+KHM,Cambodia,2023,BCA_NGDPD,Current account balance,1.307555,A
+KHM,Cambodia,2024,BCA_NGDPD,Current account balance,0.495103,A
+KHM,Cambodia,2015,GGXWDG_NGDP,General government gross debt,23.396354,A
+KHM,Cambodia,2016,GGXWDG_NGDP,General government gross debt,22.025418,A
+KHM,Cambodia,2017,GGXWDG_NGDP,General government gross debt,22.853254,A
+KHM,Cambodia,2018,GGXWDG_NGDP,General government gross debt,21.308476,A
+KHM,Cambodia,2019,GGXWDG_NGDP,General government gross debt,21.241922,A
+KHM,Cambodia,2020,GGXWDG_NGDP,General government gross debt,25.519915,A
+KHM,Cambodia,2021,GGXWDG_NGDP,General government gross debt,26.391494,A
+KHM,Cambodia,2022,GGXWDG_NGDP,General government gross debt,25.282797,A
+KHM,Cambodia,2023,GGXWDG_NGDP,General government gross debt,26.277516,A
+KHM,Cambodia,2024,GGXWDG_NGDP,General government gross debt,26.138132,A
+KHM,Cambodia,2015,LUR,Unemployment rate,,A
+KHM,Cambodia,2016,LUR,Unemployment rate,,A
+KHM,Cambodia,2017,LUR,Unemployment rate,,A
+KHM,Cambodia,2018,LUR,Unemployment rate,,A
+KHM,Cambodia,2019,LUR,Unemployment rate,,A
+KHM,Cambodia,2020,LUR,Unemployment rate,,A
+KHM,Cambodia,2021,LUR,Unemployment rate,,A
+KHM,Cambodia,2022,LUR,Unemployment rate,,A
+KHM,Cambodia,2023,LUR,Unemployment rate,,A
+KHM,Cambodia,2024,LUR,Unemployment rate,,A
+KHM,Cambodia,2015,NGDP_RPCH,Real GDP growth,6.834408,A
+KHM,Cambodia,2016,NGDP_RPCH,Real GDP growth,7.356667,A
+KHM,Cambodia,2017,NGDP_RPCH,Real GDP growth,7.580218,A
+KHM,Cambodia,2018,NGDP_RPCH,Real GDP growth,8.731106,A
+KHM,Cambodia,2019,NGDP_RPCH,Real GDP growth,7.88345,A
+KHM,Cambodia,2020,NGDP_RPCH,Real GDP growth,-2.957834,A
+KHM,Cambodia,2021,NGDP_RPCH,Real GDP growth,2.903844,A
+KHM,Cambodia,2022,NGDP_RPCH,Real GDP growth,5.502947,A
+KHM,Cambodia,2023,NGDP_RPCH,Real GDP growth,5.00733,A
+KHM,Cambodia,2024,NGDP_RPCH,Real GDP growth,6.019821,A
+KHM,Cambodia,2015,PCPIPCH,"Inflation, average consumer prices",1.220984,A
+KHM,Cambodia,2016,PCPIPCH,"Inflation, average consumer prices",3.02214,A
+KHM,Cambodia,2017,PCPIPCH,"Inflation, average consumer prices",2.912636,A
+KHM,Cambodia,2018,PCPIPCH,"Inflation, average consumer prices",2.45987,A
+KHM,Cambodia,2019,PCPIPCH,"Inflation, average consumer prices",1.941794,A
+KHM,Cambodia,2020,PCPIPCH,"Inflation, average consumer prices",2.940295,A
+KHM,Cambodia,2021,PCPIPCH,"Inflation, average consumer prices",2.921282,A
+KHM,Cambodia,2022,PCPIPCH,"Inflation, average consumer prices",5.338886,A
+KHM,Cambodia,2023,PCPIPCH,"Inflation, average consumer prices",2.131594,A
+KHM,Cambodia,2024,PCPIPCH,"Inflation, average consumer prices",0.801779,A
+LAO,Lao P.D.R.,2015,BCA_NGDPD,Current account balance,-15.727419,A
+LAO,Lao P.D.R.,2016,BCA_NGDPD,Current account balance,-8.708154,A
+LAO,Lao P.D.R.,2017,BCA_NGDPD,Current account balance,-7.386777,A
+LAO,Lao P.D.R.,2018,BCA_NGDPD,Current account balance,-9.094687,A
+LAO,Lao P.D.R.,2019,BCA_NGDPD,Current account balance,-7.030105,A
+LAO,Lao P.D.R.,2020,BCA_NGDPD,Current account balance,-1.6446,A
+LAO,Lao P.D.R.,2021,BCA_NGDPD,Current account balance,2.329058,A
+LAO,Lao P.D.R.,2022,BCA_NGDPD,Current account balance,-3.03383,A
+LAO,Lao P.D.R.,2023,BCA_NGDPD,Current account balance,2.698018,A
+LAO,Lao P.D.R.,2024,BCA_NGDPD,Current account balance,4.338994,A
+LAO,Lao P.D.R.,2015,GGXWDG_NGDP,General government gross debt,53.052209,A
+LAO,Lao P.D.R.,2016,GGXWDG_NGDP,General government gross debt,54.474309,A
+LAO,Lao P.D.R.,2017,GGXWDG_NGDP,General government gross debt,57.198237,A
+LAO,Lao P.D.R.,2018,GGXWDG_NGDP,General government gross debt,60.587856,A
+LAO,Lao P.D.R.,2019,GGXWDG_NGDP,General government gross debt,69.12944,A
+LAO,Lao P.D.R.,2020,GGXWDG_NGDP,General government gross debt,75.419733,A
+LAO,Lao P.D.R.,2021,GGXWDG_NGDP,General government gross debt,92.206976,A
+LAO,Lao P.D.R.,2022,GGXWDG_NGDP,General government gross debt,115.720033,A
+LAO,Lao P.D.R.,2023,GGXWDG_NGDP,General government gross debt,108.884857,A
+LAO,Lao P.D.R.,2024,GGXWDG_NGDP,General government gross debt,94.68223,A
+LAO,Lao P.D.R.,2015,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2016,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2017,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2018,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2019,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2020,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2021,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2022,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2023,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2024,LUR,Unemployment rate,,A
+LAO,Lao P.D.R.,2015,NGDP_RPCH,Real GDP growth,7.269872,A
+LAO,Lao P.D.R.,2016,NGDP_RPCH,Real GDP growth,7.022836,A
+LAO,Lao P.D.R.,2017,NGDP_RPCH,Real GDP growth,6.892164,A
+LAO,Lao P.D.R.,2018,NGDP_RPCH,Real GDP growth,6.248007,A
+LAO,Lao P.D.R.,2019,NGDP_RPCH,Real GDP growth,4.651992,A
+LAO,Lao P.D.R.,2020,NGDP_RPCH,Real GDP growth,-0.434912,A
+LAO,Lao P.D.R.,2021,NGDP_RPCH,Real GDP growth,2.061386,A
+LAO,Lao P.D.R.,2022,NGDP_RPCH,Real GDP growth,2.252146,A
+LAO,Lao P.D.R.,2023,NGDP_RPCH,Real GDP growth,3.657866,A
+LAO,Lao P.D.R.,2024,NGDP_RPCH,Real GDP growth,4.298969,A
+LAO,Lao P.D.R.,2015,PCPIPCH,"Inflation, average consumer prices",1.277354,A
+LAO,Lao P.D.R.,2016,PCPIPCH,"Inflation, average consumer prices",1.596912,A
+LAO,Lao P.D.R.,2017,PCPIPCH,"Inflation, average consumer prices",0.825479,A
+LAO,Lao P.D.R.,2018,PCPIPCH,"Inflation, average consumer prices",2.040393,A
+LAO,Lao P.D.R.,2019,PCPIPCH,"Inflation, average consumer prices",3.322559,A
+LAO,Lao P.D.R.,2020,PCPIPCH,"Inflation, average consumer prices",5.104073,A
+LAO,Lao P.D.R.,2021,PCPIPCH,"Inflation, average consumer prices",3.753512,A
+LAO,Lao P.D.R.,2022,PCPIPCH,"Inflation, average consumer prices",22.958998,A
+LAO,Lao P.D.R.,2023,PCPIPCH,"Inflation, average consumer prices",31.230144,A
+LAO,Lao P.D.R.,2024,PCPIPCH,"Inflation, average consumer prices",23.13236,A
+MMR,Myanmar,2015,BCA_NGDPD,Current account balance,-5.414496,A
+MMR,Myanmar,2016,BCA_NGDPD,Current account balance,-5.140712,A
+MMR,Myanmar,2017,BCA_NGDPD,Current account balance,-3.824175,A
+MMR,Myanmar,2018,BCA_NGDPD,Current account balance,-2.681725,A
+MMR,Myanmar,2019,BCA_NGDPD,Current account balance,-1.809304,A
+MMR,Myanmar,2020,BCA_NGDPD,Current account balance,-0.384779,A
+MMR,Myanmar,2021,BCA_NGDPD,Current account balance,-2.815965,A
+MMR,Myanmar,2022,BCA_NGDPD,Current account balance,-3.511688,A
+MMR,Myanmar,2023,BCA_NGDPD,Current account balance,-2.862287,A
+MMR,Myanmar,2024,BCA_NGDPD,Current account balance,3.141019,A
+MMR,Myanmar,2015,GGXWDG_NGDP,General government gross debt,36.603495,A
+MMR,Myanmar,2016,GGXWDG_NGDP,General government gross debt,35.70087,A
+MMR,Myanmar,2017,GGXWDG_NGDP,General government gross debt,41.878169,A
+MMR,Myanmar,2018,GGXWDG_NGDP,General government gross debt,39.9163,A
+MMR,Myanmar,2019,GGXWDG_NGDP,General government gross debt,37.624836,A
+MMR,Myanmar,2020,GGXWDG_NGDP,General government gross debt,49.100345,A
+MMR,Myanmar,2021,GGXWDG_NGDP,General government gross debt,63.39138,A
+MMR,Myanmar,2022,GGXWDG_NGDP,General government gross debt,55.953957,A
+MMR,Myanmar,2023,GGXWDG_NGDP,General government gross debt,53.174712,A
+MMR,Myanmar,2024,GGXWDG_NGDP,General government gross debt,50.642525,A
+MMR,Myanmar,2015,LUR,Unemployment rate,,A
+MMR,Myanmar,2016,LUR,Unemployment rate,,A
+MMR,Myanmar,2017,LUR,Unemployment rate,,A
+MMR,Myanmar,2018,LUR,Unemployment rate,,A
+MMR,Myanmar,2019,LUR,Unemployment rate,,A
+MMR,Myanmar,2020,LUR,Unemployment rate,,A
+MMR,Myanmar,2021,LUR,Unemployment rate,,A
+MMR,Myanmar,2022,LUR,Unemployment rate,,A
+MMR,Myanmar,2023,LUR,Unemployment rate,,A
+MMR,Myanmar,2024,LUR,Unemployment rate,,A
+MMR,Myanmar,2015,NGDP_RPCH,Real GDP growth,5.862473,A
+MMR,Myanmar,2016,NGDP_RPCH,Real GDP growth,6.758629,A
+MMR,Myanmar,2017,NGDP_RPCH,Real GDP growth,6.136108,A
+MMR,Myanmar,2018,NGDP_RPCH,Real GDP growth,6.277492,A
+MMR,Myanmar,2019,NGDP_RPCH,Real GDP growth,6.562336,A
+MMR,Myanmar,2020,NGDP_RPCH,Real GDP growth,-9.031913,A
+MMR,Myanmar,2021,NGDP_RPCH,Real GDP growth,-11.995157,A
+MMR,Myanmar,2022,NGDP_RPCH,Real GDP growth,4.017047,A
+MMR,Myanmar,2023,NGDP_RPCH,Real GDP growth,0.997465,A
+MMR,Myanmar,2024,NGDP_RPCH,Real GDP growth,-0.972064,A
+MMR,Myanmar,2015,PCPIPCH,"Inflation, average consumer prices",10.0435,A
+MMR,Myanmar,2016,PCPIPCH,"Inflation, average consumer prices",6.766544,A
+MMR,Myanmar,2017,PCPIPCH,"Inflation, average consumer prices",4.034837,A
+MMR,Myanmar,2018,PCPIPCH,"Inflation, average consumer prices",7.279456,A
+MMR,Myanmar,2019,PCPIPCH,"Inflation, average consumer prices",9.074257,A
+MMR,Myanmar,2020,PCPIPCH,"Inflation, average consumer prices",2.3,A
+MMR,Myanmar,2021,PCPIPCH,"Inflation, average consumer prices",9.6,A
+MMR,Myanmar,2022,PCPIPCH,"Inflation, average consumer prices",27.2,A
+MMR,Myanmar,2023,PCPIPCH,"Inflation, average consumer prices",27.6,A
+MMR,Myanmar,2024,PCPIPCH,"Inflation, average consumer prices",29.6,A
+MYS,Malaysia,2015,BCA_NGDPD,Current account balance,2.986962,A
+MYS,Malaysia,2016,BCA_NGDPD,Current account balance,2.393161,A
+MYS,Malaysia,2017,BCA_NGDPD,Current account balance,2.790613,A
+MYS,Malaysia,2018,BCA_NGDPD,Current account balance,2.230689,A
+MYS,Malaysia,2019,BCA_NGDPD,Current account balance,3.49813,A
+MYS,Malaysia,2020,BCA_NGDPD,Current account balance,4.16577,A
+MYS,Malaysia,2021,BCA_NGDPD,Current account balance,3.885707,A
+MYS,Malaysia,2022,BCA_NGDPD,Current account balance,3.188088,A
+MYS,Malaysia,2023,BCA_NGDPD,Current account balance,1.099123,A
+MYS,Malaysia,2024,BCA_NGDPD,Current account balance,1.434369,A
+MYS,Malaysia,2015,GGXWDG_NGDP,General government gross debt,56.970763,A
+MYS,Malaysia,2016,GGXWDG_NGDP,General government gross debt,55.78746,A
+MYS,Malaysia,2017,GGXWDG_NGDP,General government gross debt,54.395479,A
+MYS,Malaysia,2018,GGXWDG_NGDP,General government gross debt,55.645978,A
+MYS,Malaysia,2019,GGXWDG_NGDP,General government gross debt,57.082531,A
+MYS,Malaysia,2020,GGXWDG_NGDP,General government gross debt,67.693067,A
+MYS,Malaysia,2021,GGXWDG_NGDP,General government gross debt,69.162101,A
+MYS,Malaysia,2022,GGXWDG_NGDP,General government gross debt,65.464002,A
+MYS,Malaysia,2023,GGXWDG_NGDP,General government gross debt,69.712376,A
+MYS,Malaysia,2024,GGXWDG_NGDP,General government gross debt,69.838922,A
+MYS,Malaysia,2015,LUR,Unemployment rate,3.15,A
+MYS,Malaysia,2016,LUR,Unemployment rate,3.45,A
+MYS,Malaysia,2017,LUR,Unemployment rate,3.425,A
+MYS,Malaysia,2018,LUR,Unemployment rate,3.325,A
+MYS,Malaysia,2019,LUR,Unemployment rate,3.275,A
+MYS,Malaysia,2020,LUR,Unemployment rate,4.525,A
+MYS,Malaysia,2021,LUR,Unemployment rate,4.65,A
+MYS,Malaysia,2022,LUR,Unemployment rate,3.825,A
+MYS,Malaysia,2023,LUR,Unemployment rate,3.425,A
+MYS,Malaysia,2024,LUR,Unemployment rate,3.225,A
+MYS,Malaysia,2015,NGDP_RPCH,Real GDP growth,5.007195,A
+MYS,Malaysia,2016,NGDP_RPCH,Real GDP growth,4.449835,A
+MYS,Malaysia,2017,NGDP_RPCH,Real GDP growth,5.812722,A
+MYS,Malaysia,2018,NGDP_RPCH,Real GDP growth,4.843087,A
+MYS,Malaysia,2019,NGDP_RPCH,Real GDP growth,4.413187,A
+MYS,Malaysia,2020,NGDP_RPCH,Real GDP growth,-5.456847,A
+MYS,Malaysia,2021,NGDP_RPCH,Real GDP growth,3.31535,A
+MYS,Malaysia,2022,NGDP_RPCH,Real GDP growth,9.031737,A
+MYS,Malaysia,2023,NGDP_RPCH,Real GDP growth,3.537064,A
+MYS,Malaysia,2024,NGDP_RPCH,Real GDP growth,5.105459,A
+MYS,Malaysia,2015,PCPIPCH,"Inflation, average consumer prices",2.10439,A
+MYS,Malaysia,2016,PCPIPCH,"Inflation, average consumer prices",2.075792,A
+MYS,Malaysia,2017,PCPIPCH,"Inflation, average consumer prices",3.799392,A
+MYS,Malaysia,2018,PCPIPCH,"Inflation, average consumer prices",0.969114,A
+MYS,Malaysia,2019,PCPIPCH,"Inflation, average consumer prices",0.662892,A
+MYS,Malaysia,2020,PCPIPCH,"Inflation, average consumer prices",-1.138702,A
+MYS,Malaysia,2021,PCPIPCH,"Inflation, average consumer prices",2.477102,A
+MYS,Malaysia,2022,PCPIPCH,"Inflation, average consumer prices",3.378699,A
+MYS,Malaysia,2023,PCPIPCH,"Inflation, average consumer prices",2.488866,A
+MYS,Malaysia,2024,PCPIPCH,"Inflation, average consumer prices",1.8341,A
+PHL,Philippines,2015,BCA_NGDPD,Current account balance,2.370949,A
+PHL,Philippines,2016,BCA_NGDPD,Current account balance,-0.376263,A
+PHL,Philippines,2017,BCA_NGDPD,Current account balance,-0.652388,A
+PHL,Philippines,2018,BCA_NGDPD,Current account balance,-2.559393,A
+PHL,Philippines,2019,BCA_NGDPD,Current account balance,-0.808558,A
+PHL,Philippines,2020,BCA_NGDPD,Current account balance,3.20065,A
+PHL,Philippines,2021,BCA_NGDPD,Current account balance,-1.507978,A
+PHL,Philippines,2022,BCA_NGDPD,Current account balance,-4.516059,A
+PHL,Philippines,2023,BCA_NGDPD,Current account balance,-2.834123,A
+PHL,Philippines,2024,BCA_NGDPD,Current account balance,-4.021748,A
+PHL,Philippines,2015,GGXWDG_NGDP,General government gross debt,39.687992,A
+PHL,Philippines,2016,GGXWDG_NGDP,General government gross debt,37.376365,A
+PHL,Philippines,2017,GGXWDG_NGDP,General government gross debt,38.130096,A
+PHL,Philippines,2018,GGXWDG_NGDP,General government gross debt,37.147156,A
+PHL,Philippines,2019,GGXWDG_NGDP,General government gross debt,36.972652,A
+PHL,Philippines,2020,GGXWDG_NGDP,General government gross debt,51.643608,A
+PHL,Philippines,2021,GGXWDG_NGDP,General government gross debt,57.004626,A
+PHL,Philippines,2022,GGXWDG_NGDP,General government gross debt,57.388785,A
+PHL,Philippines,2023,GGXWDG_NGDP,General government gross debt,56.484457,A
+PHL,Philippines,2024,GGXWDG_NGDP,General government gross debt,56.627441,A
+PHL,Philippines,2015,LUR,Unemployment rate,6.275,A
+PHL,Philippines,2016,LUR,Unemployment rate,5.475,A
+PHL,Philippines,2017,LUR,Unemployment rate,5.725,A
+PHL,Philippines,2018,LUR,Unemployment rate,5.325,A
+PHL,Philippines,2019,LUR,Unemployment rate,5.1,A
+PHL,Philippines,2020,LUR,Unemployment rate,10.4,A
+PHL,Philippines,2021,LUR,Unemployment rate,7.791667,A
+PHL,Philippines,2022,LUR,Unemployment rate,5.4,A
+PHL,Philippines,2023,LUR,Unemployment rate,4.358333,A
+PHL,Philippines,2024,LUR,Unemployment rate,3.816667,A
+PHL,Philippines,2015,NGDP_RPCH,Real GDP growth,6.348305,A
+PHL,Philippines,2016,NGDP_RPCH,Real GDP growth,7.149461,A
+PHL,Philippines,2017,NGDP_RPCH,Real GDP growth,6.930993,A
+PHL,Philippines,2018,NGDP_RPCH,Real GDP growth,6.34149,A
+PHL,Philippines,2019,NGDP_RPCH,Real GDP growth,6.118518,A
+PHL,Philippines,2020,NGDP_RPCH,Real GDP growth,-9.518303,A
+PHL,Philippines,2021,NGDP_RPCH,Real GDP growth,5.714728,A
+PHL,Philippines,2022,NGDP_RPCH,Real GDP growth,7.580991,A
+PHL,Philippines,2023,NGDP_RPCH,Real GDP growth,5.51896,A
+PHL,Philippines,2024,NGDP_RPCH,Real GDP growth,5.692006,A
+PHL,Philippines,2015,PCPIPCH,"Inflation, average consumer prices",0.690163,A
+PHL,Philippines,2016,PCPIPCH,"Inflation, average consumer prices",1.233778,A
+PHL,Philippines,2017,PCPIPCH,"Inflation, average consumer prices",2.852758,A
+PHL,Philippines,2018,PCPIPCH,"Inflation, average consumer prices",5.310278,A
+PHL,Philippines,2019,PCPIPCH,"Inflation, average consumer prices",2.392065,A
+PHL,Philippines,2020,PCPIPCH,"Inflation, average consumer prices",2.393162,A
+PHL,Philippines,2021,PCPIPCH,"Inflation, average consumer prices",3.92718,A
+PHL,Philippines,2022,PCPIPCH,"Inflation, average consumer prices",5.821158,A
+PHL,Philippines,2023,PCPIPCH,"Inflation, average consumer prices",5.978025,A
+PHL,Philippines,2024,PCPIPCH,"Inflation, average consumer prices",3.212605,A
+SGP,Singapore,2015,BCA_NGDPD,Current account balance,18.693022,A
+SGP,Singapore,2016,BCA_NGDPD,Current account balance,18.026617,A
+SGP,Singapore,2017,BCA_NGDPD,Current account balance,18.488596,A
+SGP,Singapore,2018,BCA_NGDPD,Current account balance,15.676429,A
+SGP,Singapore,2019,BCA_NGDPD,Current account balance,15.453667,A
+SGP,Singapore,2020,BCA_NGDPD,Current account balance,17.697513,A
+SGP,Singapore,2021,BCA_NGDPD,Current account balance,19.252782,A
+SGP,Singapore,2022,BCA_NGDPD,Current account balance,18.922696,A
+SGP,Singapore,2023,BCA_NGDPD,Current account balance,16.391642,A
+SGP,Singapore,2024,BCA_NGDPD,Current account balance,17.201088,A
+SGP,Singapore,2015,GGXWDG_NGDP,General government gross debt,102.100935,A
+SGP,Singapore,2016,GGXWDG_NGDP,General government gross debt,105.908679,A
+SGP,Singapore,2017,GGXWDG_NGDP,General government gross debt,107.285088,A
+SGP,Singapore,2018,GGXWDG_NGDP,General government gross debt,109.187978,A
+SGP,Singapore,2019,GGXWDG_NGDP,General government gross debt,127.68197,A
+SGP,Singapore,2020,GGXWDG_NGDP,General government gross debt,147.11464,A
+SGP,Singapore,2021,GGXWDG_NGDP,General government gross debt,139.934223,A
+SGP,Singapore,2022,GGXWDG_NGDP,General government gross debt,153.338295,A
+SGP,Singapore,2023,GGXWDG_NGDP,General government gross debt,170.432627,A
+SGP,Singapore,2024,GGXWDG_NGDP,General government gross debt,166.038912,A
+SGP,Singapore,2015,LUR,Unemployment rate,1.9,A
+SGP,Singapore,2016,LUR,Unemployment rate,2.075,A
+SGP,Singapore,2017,LUR,Unemployment rate,2.175,A
+SGP,Singapore,2018,LUR,Unemployment rate,2.1,A
+SGP,Singapore,2019,LUR,Unemployment rate,2.25,A
+SGP,Singapore,2020,LUR,Unemployment rate,3.0,A
+SGP,Singapore,2021,LUR,Unemployment rate,2.65,A
+SGP,Singapore,2022,LUR,Unemployment rate,2.1,A
+SGP,Singapore,2023,LUR,Unemployment rate,1.925,A
+SGP,Singapore,2024,LUR,Unemployment rate,1.95,A
+SGP,Singapore,2015,NGDP_RPCH,Real GDP growth,2.976799,A
+SGP,Singapore,2016,NGDP_RPCH,Real GDP growth,3.910953,A
+SGP,Singapore,2017,NGDP_RPCH,Real GDP growth,4.326794,A
+SGP,Singapore,2018,NGDP_RPCH,Real GDP growth,3.186608,A
+SGP,Singapore,2019,NGDP_RPCH,Real GDP growth,1.158779,A
+SGP,Singapore,2020,NGDP_RPCH,Real GDP growth,-3.610843,A
+SGP,Singapore,2021,NGDP_RPCH,Real GDP growth,10.141085,A
+SGP,Singapore,2022,NGDP_RPCH,Real GDP growth,4.010279,A
+SGP,Singapore,2023,NGDP_RPCH,Real GDP growth,1.450268,A
+SGP,Singapore,2024,NGDP_RPCH,Real GDP growth,5.343512,A
+SGP,Singapore,2015,PCPIPCH,"Inflation, average consumer prices",-0.521976,A
+SGP,Singapore,2016,PCPIPCH,"Inflation, average consumer prices",-0.52981,A
+SGP,Singapore,2017,PCPIPCH,"Inflation, average consumer prices",0.576763,A
+SGP,Singapore,2018,PCPIPCH,"Inflation, average consumer prices",0.438784,A
+SGP,Singapore,2019,PCPIPCH,"Inflation, average consumer prices",0.56783,A
+SGP,Singapore,2020,PCPIPCH,"Inflation, average consumer prices",-0.172112,A
+SGP,Singapore,2021,PCPIPCH,"Inflation, average consumer prices",2.316103,A
+SGP,Singapore,2022,PCPIPCH,"Inflation, average consumer prices",6.130954,A
+SGP,Singapore,2023,PCPIPCH,"Inflation, average consumer prices",4.833724,A
+SGP,Singapore,2024,PCPIPCH,"Inflation, average consumer prices",2.389511,A
+THA,Thailand,2015,BCA_NGDPD,Current account balance,6.915816,A
+THA,Thailand,2016,BCA_NGDPD,Current account balance,10.508352,A
+THA,Thailand,2017,BCA_NGDPD,Current account balance,9.631034,A
+THA,Thailand,2018,BCA_NGDPD,Current account balance,5.619864,A
+THA,Thailand,2019,BCA_NGDPD,Current account balance,7.048548,A
+THA,Thailand,2020,BCA_NGDPD,Current account balance,4.144171,A
+THA,Thailand,2021,BCA_NGDPD,Current account balance,-2.141837,A
+THA,Thailand,2022,BCA_NGDPD,Current account balance,-3.428662,A
+THA,Thailand,2023,BCA_NGDPD,Current account balance,1.640037,A
+THA,Thailand,2024,BCA_NGDPD,Current account balance,2.194831,A
+THA,Thailand,2015,GGXWDG_NGDP,General government gross debt,42.558531,A
+THA,Thailand,2016,GGXWDG_NGDP,General government gross debt,41.745486,A
+THA,Thailand,2017,GGXWDG_NGDP,General government gross debt,41.777457,A
+THA,Thailand,2018,GGXWDG_NGDP,General government gross debt,41.941073,A
+THA,Thailand,2019,GGXWDG_NGDP,General government gross debt,41.063058,A
+THA,Thailand,2020,GGXWDG_NGDP,General government gross debt,49.4337,A
+THA,Thailand,2021,GGXWDG_NGDP,General government gross debt,58.366612,A
+THA,Thailand,2022,GGXWDG_NGDP,General government gross debt,60.548193,A
+THA,Thailand,2023,GGXWDG_NGDP,General government gross debt,62.235652,A
+THA,Thailand,2024,GGXWDG_NGDP,General government gross debt,62.913108,A
+THA,Thailand,2015,LUR,Unemployment rate,0.9,A
+THA,Thailand,2016,LUR,Unemployment rate,1.0,A
+THA,Thailand,2017,LUR,Unemployment rate,1.2,A
+THA,Thailand,2018,LUR,Unemployment rate,1.1,A
+THA,Thailand,2019,LUR,Unemployment rate,1.0,A
+THA,Thailand,2020,LUR,Unemployment rate,1.7,A
+THA,Thailand,2021,LUR,Unemployment rate,1.9,A
+THA,Thailand,2022,LUR,Unemployment rate,1.3,A
+THA,Thailand,2023,LUR,Unemployment rate,1.0,A
+THA,Thailand,2024,LUR,Unemployment rate,1.0,A
+THA,Thailand,2015,NGDP_RPCH,Real GDP growth,3.134047,A
+THA,Thailand,2016,NGDP_RPCH,Real GDP growth,3.435158,A
+THA,Thailand,2017,NGDP_RPCH,Real GDP growth,4.177681,A
+THA,Thailand,2018,NGDP_RPCH,Real GDP growth,4.22287,A
+THA,Thailand,2019,NGDP_RPCH,Real GDP growth,2.114558,A
+THA,Thailand,2020,NGDP_RPCH,Real GDP growth,-6.093063,A
+THA,Thailand,2021,NGDP_RPCH,Real GDP growth,1.552682,A
+THA,Thailand,2022,NGDP_RPCH,Real GDP growth,2.684753,A
+THA,Thailand,2023,NGDP_RPCH,Real GDP growth,2.240138,A
+THA,Thailand,2024,NGDP_RPCH,Real GDP growth,2.944729,A
+THA,Thailand,2015,PCPIPCH,"Inflation, average consumer prices",-0.898143,A
+THA,Thailand,2016,PCPIPCH,"Inflation, average consumer prices",0.186235,A
+THA,Thailand,2017,PCPIPCH,"Inflation, average consumer prices",0.664415,A
+THA,Thailand,2018,PCPIPCH,"Inflation, average consumer prices",1.066835,A
+THA,Thailand,2019,PCPIPCH,"Inflation, average consumer prices",0.705525,A
+THA,Thailand,2020,PCPIPCH,"Inflation, average consumer prices",-0.846088,A
+THA,Thailand,2021,PCPIPCH,"Inflation, average consumer prices",1.231045,A
+THA,Thailand,2022,PCPIPCH,"Inflation, average consumer prices",6.0759,A
+THA,Thailand,2023,PCPIPCH,"Inflation, average consumer prices",1.22909,A
+THA,Thailand,2024,PCPIPCH,"Inflation, average consumer prices",0.398333,A
+VNM,Vietnam,2015,BCA_NGDPD,Current account balance,-0.861084,A
+VNM,Vietnam,2016,BCA_NGDPD,Current account balance,0.247696,A
+VNM,Vietnam,2017,BCA_NGDPD,Current account balance,-0.595819,A
+VNM,Vietnam,2018,BCA_NGDPD,Current account balance,1.894695,A
+VNM,Vietnam,2019,BCA_NGDPD,Current account balance,3.760384,A
+VNM,Vietnam,2020,BCA_NGDPD,Current account balance,4.349164,A
+VNM,Vietnam,2021,BCA_NGDPD,Current account balance,-2.202052,A
+VNM,Vietnam,2022,BCA_NGDPD,Current account balance,0.341483,A
+VNM,Vietnam,2023,BCA_NGDPD,Current account balance,6.372151,A
+VNM,Vietnam,2024,BCA_NGDPD,Current account balance,6.613366,A
+VNM,Vietnam,2015,GGXWDG_NGDP,General government gross debt,46.11662,A
+VNM,Vietnam,2016,GGXWDG_NGDP,General government gross debt,47.880253,A
+VNM,Vietnam,2017,GGXWDG_NGDP,General government gross debt,46.621125,A
+VNM,Vietnam,2018,GGXWDG_NGDP,General government gross debt,43.798013,A
+VNM,Vietnam,2019,GGXWDG_NGDP,General government gross debt,40.993334,A
+VNM,Vietnam,2020,GGXWDG_NGDP,General government gross debt,41.318798,A
+VNM,Vietnam,2021,GGXWDG_NGDP,General government gross debt,39.237182,A
+VNM,Vietnam,2022,GGXWDG_NGDP,General government gross debt,34.923433,A
+VNM,Vietnam,2023,GGXWDG_NGDP,General government gross debt,34.25655,A
+VNM,Vietnam,2024,GGXWDG_NGDP,General government gross debt,31.163333,A
+VNM,Vietnam,2015,LUR,Unemployment rate,2.33,A
+VNM,Vietnam,2016,LUR,Unemployment rate,2.3,A
+VNM,Vietnam,2017,LUR,Unemployment rate,2.24,A
+VNM,Vietnam,2018,LUR,Unemployment rate,2.19,A
+VNM,Vietnam,2019,LUR,Unemployment rate,2.17,A
+VNM,Vietnam,2020,LUR,Unemployment rate,2.48,A
+VNM,Vietnam,2021,LUR,Unemployment rate,3.2,A
+VNM,Vietnam,2022,LUR,Unemployment rate,2.32,A
+VNM,Vietnam,2023,LUR,Unemployment rate,2.3,A
+VNM,Vietnam,2024,LUR,Unemployment rate,2.2,A
+VNM,Vietnam,2015,NGDP_RPCH,Real GDP growth,6.987154,A
+VNM,Vietnam,2016,NGDP_RPCH,Real GDP growth,6.690009,A
+VNM,Vietnam,2017,NGDP_RPCH,Real GDP growth,6.94019,A
+VNM,Vietnam,2018,NGDP_RPCH,Real GDP growth,7.465007,A
+VNM,Vietnam,2019,NGDP_RPCH,Real GDP growth,7.359263,A
+VNM,Vietnam,2020,NGDP_RPCH,Real GDP growth,2.865413,A
+VNM,Vietnam,2021,NGDP_RPCH,Real GDP growth,2.553728,A
+VNM,Vietnam,2022,NGDP_RPCH,Real GDP growth,8.5375,A
+VNM,Vietnam,2023,NGDP_RPCH,Real GDP growth,5.065024,A
+VNM,Vietnam,2024,NGDP_RPCH,Real GDP growth,6.951564,A
+VNM,Vietnam,2015,PCPIPCH,"Inflation, average consumer prices",0.631201,A
+VNM,Vietnam,2016,PCPIPCH,"Inflation, average consumer prices",2.668248,A
+VNM,Vietnam,2017,PCPIPCH,"Inflation, average consumer prices",3.520982,A
+VNM,Vietnam,2018,PCPIPCH,"Inflation, average consumer prices",3.539988,A
+VNM,Vietnam,2019,PCPIPCH,"Inflation, average consumer prices",2.795824,A
+VNM,Vietnam,2020,PCPIPCH,"Inflation, average consumer prices",3.221037,A
+VNM,Vietnam,2021,PCPIPCH,"Inflation, average consumer prices",1.834817,A
+VNM,Vietnam,2022,PCPIPCH,"Inflation, average consumer prices",3.156507,A
+VNM,Vietnam,2023,PCPIPCH,"Inflation, average consumer prices",3.252893,A
+VNM,Vietnam,2024,PCPIPCH,"Inflation, average consumer prices",3.620575,A
