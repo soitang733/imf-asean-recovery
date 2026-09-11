@@ -131,46 +131,46 @@ CLUSTER_VI = {
 
 STORY_VI = {
     "Similar COVID shock, different recovery": {
-        "title": "Cùng chịu cú sốc lớn, nhưng phục hồi theo hai hướng trái ngược",
-        "interpretation": "Mức độ thiệt hại ban đầu khá giống nhau không dẫn đến cùng một quỹ đạo phục hồi.",
-        "alternative": "Khác biệt có thể liên quan đến cơ cấu ngành, thời điểm mở cửa, hiệu ứng nền và chính sách hỗ trợ.",
-        "limitation": "So sánh mô tả này không xác định yếu tố nào là nguyên nhân trực tiếp.",
+        "title": "Cú sốc tăng trưởng tương đồng và sự phân hóa trong giai đoạn phục hồi",
+        "interpretation": "Mặc dù mức suy giảm tăng trưởng năm 2020 có quy mô gần tương đương, hai nền kinh tế ghi nhận khoảng cách phục hồi khác biệt đáng kể trong giai đoạn 2021–2024.",
+        "alternative": "Sự khác biệt có thể liên quan đến cơ cấu ngành, thời điểm tái mở cửa, hiệu ứng mức nền và quy mô hỗ trợ chính sách.",
+        "limitation": "Kết quả là bằng chứng mô tả và không cho phép xác định yếu tố gây ra sự phân hóa.",
     },
     "Strong recovery with a high inflation bill": {
-        "title": "Phục hồi mạnh đi cùng áp lực lạm phát cao hơn",
-        "interpretation": "Tăng trưởng phục hồi và lạm phát cao hơn xuất hiện đồng thời trong giai đoạn quan sát.",
-        "alternative": "Giá thực phẩm, năng lượng và các cú sốc toàn cầu có thể tác động đến lạm phát độc lập với phục hồi trong nước.",
-        "limitation": "Sự đồng biến không chứng minh phục hồi kinh tế gây ra lạm phát.",
+        "title": "Phục hồi tăng trưởng và sự gia tăng áp lực lạm phát",
+        "interpretation": "Khoảng cách phục hồi dương và mức lạm phát cao hơn đường cơ sở được ghi nhận đồng thời trong giai đoạn quan sát.",
+        "alternative": "Biến động giá lương thực, năng lượng và các cú sốc cung toàn cầu có thể tác động đến lạm phát độc lập với cầu trong nước.",
+        "limitation": "Sự đồng diễn biến giữa hai chỉ tiêu không cấu thành bằng chứng về quan hệ nhân quả.",
     },
     "Debt rose while recovery stayed weak": {
-        "title": "Nợ tăng trong khi đà phục hồi vẫn yếu",
-        "interpretation": "Nợ công cao hơn và tăng trưởng yếu hơn cùng xuất hiện trong một giai đoạn nhiều biến động.",
-        "alternative": "Tỷ giá, cách ghi nhận nợ, hiệu ứng mẫu số và các biến cố riêng của quốc gia đều có thể ảnh hưởng kết quả.",
-        "limitation": "Nợ gộp không phải nợ ròng và không phản ánh đầy đủ vị thế tài sản của chính phủ.",
+        "title": "Gia tăng nợ công và phục hồi tăng trưởng hạn chế",
+        "interpretation": "Trong phạm vi thống kê mô tả, mức tăng của tỷ lệ nợ công đồng thời xuất hiện với khoảng cách phục hồi âm.",
+        "alternative": "Biến động tỷ giá, phạm vi ghi nhận nợ, hiệu ứng mẫu số GDP và các cú sốc đặc thù quốc gia có thể ảnh hưởng đến kết quả.",
+        "limitation": "Chỉ tiêu nợ công gộp không phản ánh nợ ròng hoặc đầy đủ bảng cân đối tài sản của khu vực chính phủ.",
     },
     "Recovery with contained inflation and debt costs": {
-        "title": "Phục hồi tương đối tốt với áp lực lạm phát và nợ được kiềm chế",
-        "interpretation": "Trong phạm vi các chỉ tiêu được quan sát, Brunei có tổ hợp kết quả tương đối thuận lợi so với nhiều nước cùng khu vực.",
-        "alternative": "Kết quả có thể chịu ảnh hưởng của giá hàng hóa, tăng trưởng mẫu số hoặc dư địa tài khóa sẵn có.",
-        "limitation": "Đây là so sánh tương đối trong ASEAN-10, không phải xếp hạng sức chống chịu tuyệt đối.",
+        "title": "Phục hồi tăng trưởng trong điều kiện áp lực lạm phát và nợ tương đối thấp",
+        "interpretation": "Trên các chiều đo được lựa chọn, Brunei ghi nhận tổ hợp kết quả tương đối thuận lợi so với phân bố của mẫu ASEAN-10.",
+        "alternative": "Giá hàng hóa, thay đổi của mẫu số GDP và vị thế tài khóa ban đầu có thể ảnh hưởng đến các chỉ tiêu quan sát.",
+        "limitation": "Kết luận chỉ có ý nghĩa tương đối trong phạm vi mẫu và giai đoạn nghiên cứu, không phải thước đo tổng quát về khả năng chống chịu.",
     },
     "ASEAN's clearest statistical outlier": {
-        "title": "Trường hợp khác biệt rõ nhất về mặt thống kê",
-        "interpretation": "Quỹ đạo tăng trưởng của Myanmar khác biệt đáng kể so với phần còn lại của mẫu ASEAN-10.",
-        "alternative": "Đặc điểm cơ cấu, biến cố trong nước hoặc quy ước đo lường có thể giải thích một phần khác biệt.",
-        "limitation": "Với mẫu chỉ gồm 10 quốc gia, điểm z khá nhạy với từng quan sát riêng lẻ.",
+        "title": "Ngoại lệ thống kê về mức độ biến động tăng trưởng sau dịch",
+        "interpretation": "Mức độ biến động tăng trưởng của Myanmar lệch đáng kể so với trung bình của mẫu ASEAN-10 theo tiêu chuẩn điểm z.",
+        "alternative": "Đặc điểm cơ cấu, các biến cố trong nước và khác biệt về quy ước đo lường có thể đóng góp vào độ lệch quan sát được.",
+        "limitation": "Với cỡ mẫu 10 quốc gia, điểm z nhạy với từng quan sát và không nên được xem là bằng chứng độc lập về bất thường cấu trúc.",
     },
     "Positive growth, but still below the old baseline": {
-        "title": "Đã tăng trưởng trở lại nhưng chưa bắt kịp nhịp độ cũ",
-        "interpretation": "Tăng trưởng dương không đồng nghĩa nền kinh tế đã lấy lại tốc độ trước COVID-19.",
-        "alternative": "Mức tăng trưởng trước dịch có thể từng cao bất thường hoặc khó duy trì lâu dài.",
-        "limitation": "Số bình quân theo giai đoạn có thể che khuất các bước ngoặt từng năm.",
+        "title": "Tăng trưởng dương nhưng thấp hơn đường cơ sở trước đại dịch",
+        "interpretation": "Việc tăng trưởng trở lại mức dương không đồng nghĩa tốc độ tăng trưởng trung bình đã trở về đường cơ sở 2015–2019.",
+        "alternative": "Mức tăng trưởng trước đại dịch có thể chịu hiệu ứng chu kỳ hoặc cao hơn mức có thể duy trì trong dài hạn.",
+        "limitation": "Giá trị bình quân theo giai đoạn có thể che khuất biến động và các điểm ngoặt trong từng năm.",
     },
     "Growth recovery without equal labor-market improvement": {
-        "title": "Sản lượng phục hồi không đồng nghĩa thị trường lao động cải thiện tương ứng",
-        "interpretation": "Tăng trưởng GDP và thị trường lao động có thể điều chỉnh với tốc độ khác nhau.",
-        "alternative": "Tỷ lệ tham gia lực lượng lao động và cơ cấu việc làm có thể ảnh hưởng chỉ tiêu thất nghiệp.",
-        "limitation": "WEO không có dữ liệu thất nghiệp cho đầy đủ cả 10 quốc gia ASEAN.",
+        "title": "Sự khác biệt giữa phục hồi tăng trưởng và điều chỉnh của thị trường lao động",
+        "interpretation": "Tăng trưởng GDP và tỷ lệ thất nghiệp không nhất thiết điều chỉnh đồng thời hoặc với cùng mức độ.",
+        "alternative": "Thay đổi tỷ lệ tham gia lực lượng lao động, cơ cấu việc làm và độ trễ điều chỉnh có thể ảnh hưởng đến tỷ lệ thất nghiệp.",
+        "limitation": "WEO không cung cấp chuỗi thất nghiệp đầy đủ cho toàn bộ ASEAN-10, do đó khả năng so sánh khu vực bị hạn chế.",
     },
 }
 
@@ -261,10 +261,10 @@ def story_evidence(
         records.append(
             {
                 "Quốc gia": country_vi(indexed.loc[code, "country"]),
-                "Thước đo dùng trong câu chuyện": FEATURE_LABELS.get(feature, feature),
+                "Biến phân tích": FEATURE_LABELS.get(feature, feature),
                 "Giá trị": value(code, feature),
                 "Chỉ tiêu IMF gốc": indicator,
-                "Cách tính": formula,
+                "Phương pháp tính": formula,
             }
         )
 
@@ -273,32 +273,34 @@ def story_evidence(
             add(code, "covid_shock", "NGDP_RPCH", "Tăng trưởng 2020 − bình quân 2015–2019")
             add(code, "recovery_gap", "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019")
         evidence = (
-            f"Lào và Singapore chịu cú sốc tăng trưởng lần lượt {value('LAO', 'covid_shock'):.2f} và "
-            f"{value('SGP', 'covid_shock'):.2f} điểm phần trăm trong năm 2020. Tuy nhiên, khoảng cách phục hồi "
-            f"2021–2024 của Lào là {value('LAO', 'recovery_gap'):+.2f} điểm, còn Singapore đạt "
+            f"Cú sốc tăng trưởng năm 2020 của Lào và Singapore lần lượt là {value('LAO', 'covid_shock'):.2f} và "
+            f"{value('SGP', 'covid_shock'):.2f} điểm phần trăm. Trong giai đoạn 2021–2024, khoảng cách phục hồi "
+            f"ước tính của Lào là {value('LAO', 'recovery_gap'):+.2f} điểm, trong khi Singapore ghi nhận "
             f"{value('SGP', 'recovery_gap'):+.2f} điểm."
         )
     elif title == "Strong recovery with a high inflation bill":
         add("SGP", "recovery_gap", "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019")
         add("SGP", "inflation_cost", "PCPIPCH", "Lạm phát bình quân 2021–2024 − bình quân 2015–2019")
         evidence = (
-            f"Singapore có khoảng cách phục hồi {value('SGP', 'recovery_gap'):+.2f} điểm phần trăm; "
-            f"cùng lúc, lạm phát bình quân sau dịch cao hơn mức nền {value('SGP', 'inflation_cost'):+.2f} điểm."
+            f"Singapore ghi nhận khoảng cách phục hồi {value('SGP', 'recovery_gap'):+.2f} điểm phần trăm. "
+            f"Chênh lệch giữa lạm phát bình quân giai đoạn 2021–2024 và đường cơ sở 2015–2019 là "
+            f"{value('SGP', 'inflation_cost'):+.2f} điểm."
         )
     elif title == "Debt rose while recovery stayed weak":
         add("MMR", "debt_cost", "GGXWDG_NGDP", "Nợ công năm 2024 − nợ công năm 2019")
         add("MMR", "recovery_gap", "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019")
         evidence = (
-            f"Tỷ lệ nợ công của Myanmar thay đổi {value('MMR', 'debt_cost'):+.2f} điểm phần trăm GDP "
-            f"từ 2019 đến 2024, trong khi khoảng cách phục hồi là {value('MMR', 'recovery_gap'):+.2f} điểm."
+            f"Tỷ lệ nợ công gộp của Myanmar năm 2024 cao hơn năm 2019 "
+            f"{value('MMR', 'debt_cost'):+.2f} điểm phần trăm GDP. Trong cùng phạm vi phân tích, "
+            f"khoảng cách phục hồi tăng trưởng được ước tính ở mức {value('MMR', 'recovery_gap'):+.2f} điểm."
         )
     elif title == "Recovery with contained inflation and debt costs":
         add("BRN", "recovery_gap", "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019")
         add("BRN", "inflation_cost", "PCPIPCH", "Lạm phát bình quân 2021–2024 − bình quân 2015–2019")
         add("BRN", "debt_cost", "GGXWDG_NGDP", "Nợ công năm 2024 − nợ công năm 2019")
         evidence = (
-            f"Brunei có khoảng cách phục hồi {value('BRN', 'recovery_gap'):+.2f} điểm, áp lực lạm phát thay đổi "
-            f"{value('BRN', 'inflation_cost'):+.2f} điểm và tỷ lệ nợ công thay đổi "
+            f"Brunei ghi nhận khoảng cách phục hồi {value('BRN', 'recovery_gap'):+.2f} điểm. Chênh lệch lạm phát "
+            f"bình quân so với đường cơ sở là {value('BRN', 'inflation_cost'):+.2f} điểm, trong khi tỷ lệ nợ công thay đổi "
             f"{value('BRN', 'debt_cost'):+.2f} điểm phần trăm GDP."
         )
     elif title == "ASEAN's clearest statistical outlier":
@@ -309,29 +311,31 @@ def story_evidence(
         records.append(
             {
                 "Quốc gia": "Myanmar",
-                "Thước đo dùng trong câu chuyện": "Biến động tăng trưởng sau dịch",
+                "Biến phân tích": "Biến động tăng trưởng sau dịch",
                 "Giá trị": float(outlier["value"]),
                 "Chỉ tiêu IMF gốc": "NGDP_RPCH",
-                "Cách tính": f"Độ lệch chuẩn 2021–2024; điểm z = {float(outlier['z_score']):.2f}",
+                "Phương pháp tính": f"Độ lệch chuẩn 2021–2024; điểm z = {float(outlier['z_score']):.2f}",
             }
         )
         evidence = (
-            f"Độ biến động tăng trưởng sau dịch của Myanmar là {float(outlier['value']):.2f}; "
-            f"điểm z {float(outlier['z_score']):.2f} vượt ngưỡng nhận diện ngoại lệ |z| ≥ 2."
+            f"Độ lệch chuẩn của tăng trưởng Myanmar trong giai đoạn 2021–2024 là {float(outlier['value']):.2f}. "
+            f"Điểm z tương ứng đạt {float(outlier['z_score']):.2f}, vượt ngưỡng nhận diện ngoại lệ |z| ≥ 2."
         )
     elif title == "Positive growth, but still below the old baseline":
         add("LAO", "recovery_growth", "NGDP_RPCH", "Tăng trưởng bình quân 2021–2024")
         add("LAO", "recovery_gap", "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019")
         evidence = (
-            f"Lào tăng trưởng bình quân {value('LAO', 'recovery_growth'):.2f}% trong giai đoạn 2021–2024, "
-            f"nhưng khoảng cách so với mức nền trước dịch vẫn là {value('LAO', 'recovery_gap'):+.2f} điểm."
+            f"Tăng trưởng GDP thực bình quân của Lào đạt {value('LAO', 'recovery_growth'):.2f}% trong giai đoạn "
+            f"2021–2024. So với đường cơ sở 2015–2019, khoảng cách phục hồi là "
+            f"{value('LAO', 'recovery_gap'):+.2f} điểm phần trăm."
         )
     elif title == "Growth recovery without equal labor-market improvement":
         add("SGP", "recovery_gap", "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019")
         add("SGP", "unemployment_change", "LUR", "Thất nghiệp bình quân 2021–2024 − bình quân 2015–2019")
         evidence = (
-            f"Singapore có khoảng cách phục hồi {value('SGP', 'recovery_gap'):+.2f} điểm, nhưng tỷ lệ thất nghiệp "
-            f"bình quân sau dịch thay đổi {value('SGP', 'unemployment_change'):+.2f} điểm phần trăm so với mức nền."
+            f"Singapore ghi nhận khoảng cách phục hồi {value('SGP', 'recovery_gap'):+.2f} điểm. Chênh lệch tỷ lệ "
+            f"thất nghiệp bình quân giữa giai đoạn 2021–2024 và đường cơ sở 2015–2019 là "
+            f"{value('SGP', 'unemployment_change'):+.2f} điểm phần trăm."
         )
     else:
         evidence = str(row["evidence"])
@@ -348,7 +352,7 @@ def story_card(row: pd.Series, feature_data: pd.DataFrame, outlier_data: pd.Data
         f"<h4>{story['title']}</h4>"
         f"<p><strong>{countries}</strong></p>"
         f"<p>{evidence}</p>"
-        '<p class="small-note"><strong>Nguồn:</strong> IMF WEO · tính trực tiếp từ dữ liệu 2015–2024</p>'
+        '<p class="small-note"><strong>Nguồn dữ liệu:</strong> IMF WEO tháng 4/2026 · giai đoạn 2015–2024</p>'
         "</div>"
     )
 
@@ -393,7 +397,7 @@ with st.sidebar:
     st.info("Mỗi chỉ tiêu được trình bày riêng. Nghiên cứu không tạo điểm tổng hợp tùy ý và không suy diễn quan hệ nhân quả.")
     with st.expander("Hướng dẫn xem trong 60 giây"):
         st.markdown(
-            "1. **Đọc Tổng quan** để nắm câu chuyện chính.\n\n"
+            "1. **Đọc Tổng quan** để nắm các kết quả chính.\n\n"
             "2. **Mở Từng quốc gia** để xem số liệu qua từng năm.\n\n"
             "3. **Xem Các đánh đổi** để biết phục hồi đi cùng áp lực nào.\n\n"
             "4. **Kiểm tra Dữ liệu & phương pháp** nếu muốn biết con số đến từ đâu."
@@ -414,7 +418,7 @@ view = add_country_vi(clean[clean["country"].isin(selected)])
 feature_view = add_country_vi(features[features["country"].isin(selected)])
 
 tab_overview, tab_country, tab_tradeoff, tab_patterns, tab_method = st.tabs(
-    ["Tổng quan", "Từng quốc gia", "Các đánh đổi", "Mẫu hình & câu chuyện", "Dữ liệu & phương pháp"]
+    ["Tổng quan", "Từng quốc gia", "Các đánh đổi", "Kết quả phân tích", "Dữ liệu & phương pháp"]
 )
 
 with tab_overview:
@@ -440,7 +444,7 @@ with tab_overview:
     c3.metric("Phục hồi cao nhất", format_number(best["recovery_gap"], " điểm %"), best["Quốc gia"])
     c4.metric("Phục hồi thấp nhất", format_number(worst["recovery_gap"], " điểm %"), worst["Quốc gia"], delta_color="inverse")
 
-    st.subheader("Ba phát hiện nổi bật")
+    st.subheader("Ba kết quả định lượng nổi bật")
     story_columns = st.columns(3)
     for column, (_, row) in zip(story_columns, data["stories"].head(3).iterrows()):
         column.markdown(story_card(row, features, data["outliers"]), unsafe_allow_html=True)
@@ -541,7 +545,7 @@ with tab_patterns:
     cluster_column, story_column = st.columns([1.1, 1])
     with cluster_column:
         st.subheader("Các nhóm có đặc điểm phục hồi tương tự")
-        st.caption("Thuật toán nhóm các quốc gia có bộ chỉ số gần nhau; đây là công cụ khám phá, không phải bảng xếp hạng.")
+        st.caption("Thuật toán phân nhóm các quốc gia có đặc trưng định lượng tương đồng; kết quả mang tính khám phá và không cấu thành bảng xếp hạng.")
         cluster_view = add_country_vi(clusters[clusters["country"].isin(selected)]).dropna(subset=["pca_1", "pca_2"])
         if cluster_view.empty:
             st.warning("Không đủ dữ liệu để thực hiện phân nhóm.")
@@ -568,26 +572,27 @@ with tab_patterns:
             st.write("So sánh K-means và phân cụm phân cấp Ward với số nhóm từ 2 đến 5.")
             st.dataframe(evaluation, hide_index=True, width="stretch")
     with story_column:
-        st.subheader("Các câu chuyện đáng chú ý")
+        st.subheader("Các kết quả định lượng đáng chú ý")
         for index, row in data["stories"].iterrows():
             story = story_content(row)
             evidence, evidence_table = story_evidence(row, features, data["outliers"])
             countries = ", ".join(country_vi(name.strip()) for name in str(row["countries_involved"]).split(";"))
             with st.expander(f"{index + 1}. {story['title']}", expanded=index < 2):
-                st.markdown(f"**Quốc gia liên quan:** {countries}")
-                st.markdown(f"**Bằng chứng rút trực tiếp từ dữ liệu:** {evidence}")
+                st.markdown(f"**Phạm vi quan sát:** {countries}")
+                st.markdown(f"**Bằng chứng định lượng:** {evidence}")
                 st.dataframe(
                     evidence_table.style.format({"Giá trị": "{:+.2f}"}),
                     hide_index=True,
                     width="stretch",
                 )
                 st.caption(
-                    "Nguồn: IMF World Economic Outlook, tháng 4/2026. Các giá trị trên được tính từ "
-                    "data/clean_imf_weo.csv và lưu trong data/country_features.csv; không nhập thủ công."
+                    "Nguồn: IMF World Economic Outlook, phiên bản tháng 4/2026. Các đại lượng dẫn xuất được "
+                    "tính từ chuỗi quan sát 2015–2024 trong data/clean_imf_weo.csv và được lưu tại "
+                    "data/country_features.csv để bảo đảm khả năng tái lập."
                 )
-                st.markdown(f"**Cách hiểu:** {story['interpretation']}")
-                st.markdown(f"**Giải thích khác có thể có:** {story['alternative']}")
-                st.markdown(f"**Giới hạn:** {story['limitation']}")
+                st.markdown(f"**Diễn giải thống kê:** {story['interpretation']}")
+                st.markdown(f"**Các yếu tố giải thích thay thế:** {story['alternative']}")
+                st.markdown(f"**Giới hạn suy luận:** {story['limitation']}")
 
 with tab_method:
     st.subheader("Dữ liệu được xử lý như thế nào?")
@@ -597,7 +602,7 @@ with tab_method:
         ("2 · Đọc dữ liệu", "Chuỗi và quan sát", "Tạo đủ khung 500 dòng"),
         ("3 · Kiểm tra", "Trùng lặp và thiếu", "Độ phủ theo nước × chỉ tiêu"),
         ("4 · Tính toán", "Cú sốc và phục hồi", "Công thức minh bạch"),
-        ("5 · Khám phá", "Ngoại lệ và phân nhóm", "Gợi ý câu chuyện"),
+        ("5 · Khám phá", "Ngoại lệ và phân nhóm", "Tổng hợp kết quả"),
     ]
     for column, (number, title, detail) in zip(st.columns(5), steps):
         column.markdown(
@@ -637,7 +642,7 @@ with tab_method:
         })
         st.dataframe(coverage_table, hide_index=True, width="stretch")
     with right:
-        st.markdown("**Quan sát khác biệt mạnh (|z| ≥ 2)**")
+        st.markdown("**Ngoại lệ thống kê theo ngưỡng |z| ≥ 2**")
         outliers = data["outliers"].copy()
         outliers["country"] = outliers["country"].map(country_vi)
         outliers["feature"] = outliers["feature"].map(FEATURE_LABELS).fillna(outliers["feature"])

@@ -4,7 +4,7 @@ Pipeline Python phân tích IMF World Economic Outlook (WEO), vintage April 2026
 
 Dashboard được trình bày hoàn toàn bằng tiếng Việt và thiết kế theo lối kể chuyện dành cho cả người chưa có nền tảng kinh tế hoặc phân tích dữ liệu. Luồng đọc gồm: hiểu bài toán trong một phút, xem kết luận chính, khám phá từng quốc gia, nhận diện các đánh đổi, rồi kiểm tra nguồn dữ liệu và phương pháp.
 
-Mỗi câu chuyện định lượng trên dashboard được tạo từ dữ liệu đang nạp, kèm bảng bằng chứng, mã chỉ tiêu IMF và công thức tính. Các con số không được nhập cứng vào phần trình bày; khi dữ liệu đầu vào thay đổi, bằng chứng hiển thị cũng thay đổi theo.
+Mỗi kết quả định lượng trên dashboard được tạo từ dữ liệu đang nạp, kèm bảng bằng chứng, mã chỉ tiêu IMF và công thức tính. Các con số không được nhập cứng vào phần trình bày; khi dữ liệu đầu vào thay đổi, bằng chứng hiển thị cũng thay đổi theo.
 
 **Deploy Streamlit Cloud:** repo `soitang733/imf-asean-recovery`, entrypoint `streamlit_app.py`, branch `main`.
 
