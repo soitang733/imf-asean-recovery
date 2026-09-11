@@ -28,12 +28,13 @@
 
       mount(
         {
-          requirements: ["pandas", "plotly"],
+          requirements: ["pandas", "plotly", "scikit-learn"],
           entrypoint: "app.py",
           files: {
             "app.py": { url: "./app.py" },
             "src/__init__.py": { url: "./src/__init__.py" },
             "src/config.py": { url: "./src/config.py" },
+            "src/clustering.py": { url: "./src/clustering.py" },
             "data/clean_imf_weo.csv": { url: "./data/clean_imf_weo.csv" },
             "data/country_features.csv": { url: "./data/country_features.csv" },
             "data/metadata.json": { url: "./data/metadata.json" },
