@@ -391,6 +391,17 @@ with tab_method:
 
     st.subheader("Coverage theo country × indicator")
     coverage = data["coverage"].copy()
+    unavailable_lur = coverage[
+        (coverage["indicator_code"] == "LUR")
+        & (coverage["available_2015_2024"] == 0)
+    ]["country"].tolist()
+    if unavailable_lur:
+        st.info(
+            "Đây không phải lỗi lấy dữ liệu: IMF WEO April 2026 không trả về chuỗi LUR "
+            f"giai đoạn 2015–2024 cho {', '.join(unavailable_lur)}. "
+            "Pipeline giữ nguyên NA theo yêu cầu, không nội suy và không dùng nguồn khác để lấp dữ liệu. "
+            "Các phân tích liên quan đến thất nghiệp tự động chỉ dùng những quốc gia có quan sát hợp lệ."
+        )
     coverage_matrix = coverage.pivot(index="country", columns="indicator_code", values="coverage_2015_2024")
     coverage_matrix = coverage_matrix.reindex(columns=list(INDICATOR_LABELS))
     fig = px.imshow(

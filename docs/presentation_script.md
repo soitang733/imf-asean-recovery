@@ -34,7 +34,7 @@ Dataset `IMF.RES,WEO,+`; ten country codes; five indicator codes; annual frequen
 
 ### How is missing data handled?
 
-The pipeline builds a complete country-by-indicator coverage grid. It does not drop a country for missing years. LUR is absent for Cambodia, Lao P.D.R., Myanmar and Timor-Leste, so unemployment does not enter clustering.
+The pipeline builds a complete country-by-indicator coverage grid. It does not drop a country for missing years. LUR is absent for Cambodia, Lao P.D.R. and Myanmar in the requested ASEAN-10 sample, so these observations remain NA and are not silently replaced.
 
 ### How are forecasts handled?
 

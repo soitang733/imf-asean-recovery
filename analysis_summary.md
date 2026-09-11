@@ -13,6 +13,8 @@
 
 There are 3 country-indicator pairs with less than 70% coverage during 2015–2024. Countries were not automatically dropped.
 
+The raw IMF WEO April 2026 response contains no LUR series for Cambodia, Lao P.D.R. or Myanmar. These are source-level missing values, not parser failures. They remain NA: no interpolation and no alternative source is used.
+
 | country    | indicator_code   |   coverage_2015_2024 | missing_years                                     |
 |:-----------|:-----------------|---------------------:|:--------------------------------------------------|
 | Cambodia   | LUR              |                 0.00 | 2015,2016,2017,2018,2019,2020,2021,2022,2023,2024 |
