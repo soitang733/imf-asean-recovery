@@ -418,7 +418,7 @@ view = add_country_vi(clean[clean["country"].isin(selected)])
 feature_view = add_country_vi(features[features["country"].isin(selected)])
 
 tab_overview, tab_country, tab_tradeoff, tab_patterns, tab_method = st.tabs(
-    ["Tổng quan", "Từng quốc gia", "Các đánh đổi", "Kết quả phân tích", "Dữ liệu & phương pháp"]
+    ["Tổng quan", "Từng quốc gia", "Các đánh đổi", "Câu chuyện dữ liệu", "Dữ liệu & phương pháp"]
 )
 
 with tab_overview:
@@ -444,10 +444,23 @@ with tab_overview:
     c3.metric("Phục hồi cao nhất", format_number(best["recovery_gap"], " điểm %"), best["Quốc gia"])
     c4.metric("Phục hồi thấp nhất", format_number(worst["recovery_gap"], " điểm %"), worst["Quốc gia"], delta_color="inverse")
 
-    st.subheader("Ba kết quả định lượng nổi bật")
-    story_columns = st.columns(3)
-    for column, (_, row) in zip(story_columns, data["stories"].head(3).iterrows()):
-        column.markdown(story_card(row, features, data["outliers"]), unsafe_allow_html=True)
+    story_features = features.set_index("country_code")
+    lao = story_features.loc["LAO"]
+    singapore = story_features.loc["SGP"]
+    st.subheader("Câu chuyện trung tâm: cùng cú sốc, khác quỹ đạo phục hồi")
+    st.markdown(
+        f"""
+        <div class="guide">
+        Năm 2020, Lào và Singapore chịu mức suy giảm tăng trưởng so với đường cơ sở gần tương đương
+        (<strong>{lao['covid_shock']:.2f}</strong> và <strong>{singapore['covid_shock']:.2f}</strong> điểm phần trăm).
+        Tuy nhiên, đến giai đoạn 2021–2024, khoảng cách phục hồi của Lào vẫn ở mức
+        <strong>{lao['recovery_gap']:+.2f}</strong> điểm, trong khi Singapore đạt
+        <strong>{singapore['recovery_gap']:+.2f}</strong> điểm. Cùng một mức độ tổn thương ban đầu đã đi kèm
+        hai kết quả phục hồi khác biệt. Tab <strong>Câu chuyện dữ liệu</strong> trình bày chuỗi bằng chứng đầy đủ.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     st.subheader("Tăng trưởng trước dịch, cú sốc năm 2020 và giai đoạn phục hồi")
     st.caption("Cách đọc: mỗi nhóm cột là một quốc gia; cột xanh lá cho biết tốc độ tăng trưởng bình quân sau dịch.")
@@ -542,57 +555,160 @@ with tab_tradeoff:
     )
 
 with tab_patterns:
-    cluster_column, story_column = st.columns([1.1, 1])
-    with cluster_column:
-        st.subheader("Các nhóm có đặc điểm phục hồi tương tự")
-        st.caption("Thuật toán phân nhóm các quốc gia có đặc trưng định lượng tương đồng; kết quả mang tính khám phá và không cấu thành bảng xếp hạng.")
+    story_features = features.set_index("country_code")
+    lao = story_features.loc["LAO"]
+    singapore = story_features.loc["SGP"]
+
+    st.subheader("Cùng một cú sốc, hai quỹ đạo phục hồi")
+    st.markdown(
+        "Câu chuyện dữ liệu tập trung vào **Lào và Singapore**—hai nền kinh tế chịu cú sốc tăng trưởng "
+        "năm 2020 gần tương đương, nhưng đi theo hai quỹ đạo khác biệt trong bốn năm tiếp theo. "
+        "Cách tiếp cận này so sánh mỗi quốc gia với chính đường cơ sở trước đại dịch của mình."
+    )
+
+    st.markdown("### 1. Điểm xuất phát: mức thiệt hại ban đầu gần tương đương")
+    c1, c2 = st.columns(2)
+    c1.metric("Cú sốc tăng trưởng của Lào", f"{lao['covid_shock']:.2f} điểm %")
+    c2.metric("Cú sốc tăng trưởng của Singapore", f"{singapore['covid_shock']:.2f} điểm %")
+    st.write(
+        "Chênh lệch giữa hai mức suy giảm chỉ khoảng "
+        f"{abs(lao['covid_shock'] - singapore['covid_shock']):.2f} điểm phần trăm. "
+        "Nếu chỉ quan sát năm 2020, hai quốc gia có vẻ đã chịu tổn thương với quy mô khá giống nhau."
+    )
+
+    st.markdown("### 2. Bước ngoặt: quỹ đạo tăng trưởng phân hóa sau năm 2020")
+    story_series = add_country_vi(
+        clean[
+            clean["country_code"].isin(["LAO", "SGP"])
+            & (clean["indicator_code"] == "NGDP_RPCH")
+        ]
+    )
+    fig = px.line(
+        story_series,
+        x="year",
+        y="value",
+        color="Quốc gia",
+        markers=True,
+        color_discrete_map=COUNTRY_COLORS,
+        labels={"year": "Năm", "value": "Tăng trưởng GDP thực (%)"},
+        title="Tăng trưởng GDP thực của Lào và Singapore, 2015–2024",
+    )
+    fig.add_vline(x=2020, line_dash="dash", line_color="#dc2626", annotation_text="Cú sốc 2020")
+    fig.add_hline(y=0, line_color="#94a3b8")
+    fig.update_layout(legend_orientation="h", legend_y=1.12, margin=dict(t=70, b=20))
+    st.plotly_chart(fig, width="stretch")
+    st.caption(
+        "Nguồn: IMF WEO tháng 4/2026, chỉ tiêu NGDP_RPCH. Đường biểu diễn là quan sát hằng năm; "
+        "không nội suy giá trị thiếu."
+    )
+
+    c1, c2 = st.columns(2)
+    c1.metric(
+        "Khoảng cách phục hồi của Lào",
+        f"{lao['recovery_gap']:+.2f} điểm %",
+        f"Tăng trưởng 2021–2024: {lao['recovery_growth']:.2f}%",
+        delta_color="inverse",
+    )
+    c2.metric(
+        "Khoảng cách phục hồi của Singapore",
+        f"{singapore['recovery_gap']:+.2f} điểm %",
+        f"Tăng trưởng 2021–2024: {singapore['recovery_growth']:.2f}%",
+    )
+    st.write(
+        f"Lào đã trở lại tăng trưởng dương, nhưng tốc độ bình quân giai đoạn 2021–2024 vẫn thấp hơn đường cơ sở "
+        f"{abs(lao['recovery_gap']):.2f} điểm phần trăm. Ngược lại, tăng trưởng bình quân của Singapore cao hơn "
+        f"đường cơ sở {singapore['recovery_gap']:.2f} điểm. Đây là điểm phân hóa trung tâm của bộ dữ liệu."
+    )
+
+    st.markdown("### 3. Phục hồi không chỉ là tăng trưởng: chi phí vĩ mô cũng khác biệt")
+    story_costs = pd.DataFrame(
+        [
+            {
+                "Quốc gia": "Lào",
+                "Khoảng cách phục hồi": lao["recovery_gap"],
+                "Thay đổi lạm phát": lao["inflation_cost"],
+                "Thay đổi nợ công": lao["debt_cost"],
+            },
+            {
+                "Quốc gia": "Singapore",
+                "Khoảng cách phục hồi": singapore["recovery_gap"],
+                "Thay đổi lạm phát": singapore["inflation_cost"],
+                "Thay đổi nợ công": singapore["debt_cost"],
+            },
+        ]
+    )
+    st.dataframe(
+        story_costs.style.format(
+            {
+                "Khoảng cách phục hồi": "{:+.2f}",
+                "Thay đổi lạm phát": "{:+.2f}",
+                "Thay đổi nợ công": "{:+.2f}",
+            }
+        ),
+        hide_index=True,
+        width="stretch",
+    )
+    st.caption(
+        "Khoảng cách phục hồi = tăng trưởng bình quân 2021–2024 trừ bình quân 2015–2019; "
+        "thay đổi lạm phát được tính giữa hai giai đoạn; thay đổi nợ công = mức năm 2024 trừ năm 2019. "
+        "Đơn vị: điểm phần trăm; nợ công là điểm phần trăm GDP."
+    )
+    st.write(
+        f"Đối với Lào, khoảng cách phục hồi âm xuất hiện đồng thời với mức tăng lạm phát "
+        f"{lao['inflation_cost']:.2f} điểm phần trăm và mức tăng tỷ lệ nợ công "
+        f"{lao['debt_cost']:.2f} điểm phần trăm GDP. Các chỉ tiêu này cho thấy việc đánh giá phục hồi "
+        "chỉ dựa trên tăng trưởng dương có thể bỏ qua những mất cân đối vĩ mô đi kèm."
+    )
+
+    st.markdown("### 4. Thông điệp rút ra từ dữ liệu")
+    st.success(
+        "Quy mô cú sốc ban đầu không đủ để dự báo kết quả phục hồi. Trong trường hợp Lào và Singapore, "
+        "mức thiệt hại năm 2020 gần tương đương nhưng khoảng cách phục hồi và các chỉ tiêu chi phí vĩ mô "
+        "phân hóa rõ rệt. Vì vậy, khả năng phục hồi cần được đánh giá đồng thời trên nhiều chiều, thay vì "
+        "chỉ dựa vào tốc độ tăng trưởng sau khủng hoảng."
+    )
+    st.warning(
+        "Phân tích này mang tính mô tả. Dữ liệu cho thấy các biến số diễn biến đồng thời nhưng không xác định "
+        "quan hệ nhân quả. Khác biệt về cơ cấu kinh tế, chính sách, thời điểm tái mở cửa, tỷ giá và hiệu ứng "
+        "mức nền cần được kiểm soát trong một nghiên cứu nhân quả riêng. Nợ công gộp của Singapore cũng cần "
+        "được xem xét cùng vị thế tài sản của chính phủ."
+    )
+
+    with st.expander("Bảng bằng chứng và khả năng tái lập"):
+        evidence = pd.DataFrame(
+            [
+                ["Lào", "Cú sốc tăng trưởng 2020", lao["covid_shock"], "NGDP_RPCH", "2020 − bình quân 2015–2019"],
+                ["Singapore", "Cú sốc tăng trưởng 2020", singapore["covid_shock"], "NGDP_RPCH", "2020 − bình quân 2015–2019"],
+                ["Lào", "Khoảng cách phục hồi", lao["recovery_gap"], "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
+                ["Singapore", "Khoảng cách phục hồi", singapore["recovery_gap"], "NGDP_RPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
+                ["Lào", "Thay đổi lạm phát", lao["inflation_cost"], "PCPIPCH", "Bình quân 2021–2024 − bình quân 2015–2019"],
+                ["Lào", "Thay đổi nợ công", lao["debt_cost"], "GGXWDG_NGDP", "Năm 2024 − năm 2019"],
+            ],
+            columns=["Quốc gia", "Biến phân tích", "Giá trị", "Chỉ tiêu IMF", "Phương pháp tính"],
+        )
+        st.dataframe(evidence.style.format({"Giá trị": "{:+.2f}"}), hide_index=True, width="stretch")
+        st.caption(
+            "Nguồn dữ liệu: data/clean_imf_weo.csv. Các đại lượng dẫn xuất được lưu tại "
+            "data/country_features.csv. Toàn bộ số liệu trong câu chuyện được tính khi ứng dụng chạy."
+        )
+
+    with st.expander("Phân nhóm ASEAN-10 — phân tích bổ trợ"):
         cluster_view = add_country_vi(clusters[clusters["country"].isin(selected)]).dropna(subset=["pca_1", "pca_2"])
         if cluster_view.empty:
             st.warning("Không đủ dữ liệu để thực hiện phân nhóm.")
         else:
             cluster_view["Nhãn nhóm"] = cluster_view["cluster_label"].map(cluster_label_vi)
-            if not data["cluster_eval"].empty and not data["cluster_eval"]["economically_reviewable"].any():
-                st.warning(
-                    "Mọi phương án từ 2 đến 5 nhóm đều tạo ra ít nhất một nhóm chỉ có một quốc gia. "
-                    "Vì vậy, kết quả này chỉ mang tính khám phá và chưa phải một phân loại ổn định của ASEAN-10."
-                )
             fig = px.scatter(
-                cluster_view, x="pca_1", y="pca_2", color="Nhãn nhóm", text="Quốc gia",
-                hover_data={"cluster": True, "pca_1": ":.2f", "pca_2": ":.2f"},
+                cluster_view,
+                x="pca_1",
+                y="pca_2",
+                color="Nhãn nhóm",
+                text="Quốc gia",
                 labels={"pca_1": "Chiều tổng hợp 1", "pca_2": "Chiều tổng hợp 2"},
             )
             fig.update_traces(textposition="top center", marker_size=14)
-            fig.update_layout(legend_orientation="h", legend_y=1.16, margin=dict(t=65, b=20))
             st.plotly_chart(fig, width="stretch")
-        with st.expander("Cách chọn mô hình phân nhóm"):
-            evaluation = data["cluster_eval"].rename(columns={
-                "method": "Phương pháp", "k": "Số nhóm", "silhouette": "Điểm silhouette",
-                "smallest_cluster": "Nhóm nhỏ nhất", "economically_reviewable": "Có thể diễn giải",
-            })
-            st.write("So sánh K-means và phân cụm phân cấp Ward với số nhóm từ 2 đến 5.")
-            st.dataframe(evaluation, hide_index=True, width="stretch")
-    with story_column:
-        st.subheader("Các kết quả định lượng đáng chú ý")
-        for index, row in data["stories"].iterrows():
-            story = story_content(row)
-            evidence, evidence_table = story_evidence(row, features, data["outliers"])
-            countries = ", ".join(country_vi(name.strip()) for name in str(row["countries_involved"]).split(";"))
-            with st.expander(f"{index + 1}. {story['title']}", expanded=index < 2):
-                st.markdown(f"**Phạm vi quan sát:** {countries}")
-                st.markdown(f"**Bằng chứng định lượng:** {evidence}")
-                st.dataframe(
-                    evidence_table.style.format({"Giá trị": "{:+.2f}"}),
-                    hide_index=True,
-                    width="stretch",
-                )
-                st.caption(
-                    "Nguồn: IMF World Economic Outlook, phiên bản tháng 4/2026. Các đại lượng dẫn xuất được "
-                    "tính từ chuỗi quan sát 2015–2024 trong data/clean_imf_weo.csv và được lưu tại "
-                    "data/country_features.csv để bảo đảm khả năng tái lập."
-                )
-                st.markdown(f"**Diễn giải thống kê:** {story['interpretation']}")
-                st.markdown(f"**Các yếu tố giải thích thay thế:** {story['alternative']}")
-                st.markdown(f"**Giới hạn suy luận:** {story['limitation']}")
+            st.caption("Kết quả phân nhóm chỉ mang tính khám phá và không cấu thành bảng xếp hạng quốc gia.")
 
 with tab_method:
     st.subheader("Dữ liệu được xử lý như thế nào?")
