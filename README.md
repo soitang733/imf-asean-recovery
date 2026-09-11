@@ -30,6 +30,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 python run_pipeline.py --force-download
+python run_crosscheck.py --force-download
 pytest -q
 streamlit run app.py
 ```
@@ -61,6 +62,9 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 - `data/metadata.json`: metadata của lần lấy dữ liệu.
 - `data/crawl_audit.json`: checksum và kết quả kiểm tra crawl lại, gồm các truy vấn LUR tách riêng.
 - `data/raw_imf_weo_sdmx3.json`: response SDMX 3.0 dùng để đối chiếu; không thay thế nguồn SDMX 2.1 chính vì coverage 2015–2024 giống nhau.
+- `data/crosscheck/raw_world_bank_gdp_growth.json`: phản hồi World Bank Indicators API cho `NY.GDP.MKTP.KD.ZG`.
+- `data/crosscheck/imf_worldbank_gdp_growth_comparison.csv`: đối chiếu IMF–World Bank theo country × year.
+- `data/crosscheck/imf_worldbank_gdp_growth_summary.csv`: MAE và chênh lệch lớn nhất theo quốc gia.
 - `outputs/data_coverage.csv`: coverage theo country × indicator.
 - `data/country_features.csv`: biến phân tích dẫn xuất.
 - `outputs/data_coverage.csv`, `outputs/outliers.csv` và `outputs/candidate_stories.csv`: đầu ra kiểm tra và phân tích đã lưu.
@@ -79,5 +83,7 @@ country_code,country,year,indicator_code,indicator_name,value,frequency
 
 Clustering chỉ dùng các đặc trưng có coverage đầy đủ cho cả ASEAN-10; không điền giá trị thiếu. Nhãn recovery profile là so với trung vị của mẫu, không đồng nghĩa recovery gap dương.
 Dashboard tính lại ranking và clustering trực tiếp từ `data/country_features.csv`, nên repository không giữ các CSV ranking/clustering cũ có thể gây nhầm lẫn. Chạy pipeline đầy đủ sẽ tái tạo các output này bằng logic hiện hành.
+
+World Bank chỉ là lớp kiểm tra chéo cho tăng trưởng GDP thực. Pipeline không ghi giá trị World Bank vào `clean_imf_weo.csv`, không dùng nó để lấp `LUR`, và không thay đổi nguồn chính IMF WEO SDMX 2.1.
 
 WEO April 2026 có `PUBLICATION_DATE=2026-04-14` trong SDMX response. Số version kỹ thuật bên trong dataflow vẫn có thể được IMF biểu diễn riêng; URL dùng `+` để tránh khóa pipeline vào một version cũ.

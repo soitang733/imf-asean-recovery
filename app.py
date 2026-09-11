@@ -16,6 +16,8 @@ from src.config import (
     METADATA_PATH,
     OUTLIER_PATH,
     STORY_PATH,
+    WB_COMPARISON_PATH,
+    WB_SUMMARY_PATH,
 )
 
 
@@ -86,6 +88,8 @@ def load_outputs() -> dict:
         OUTLIER_PATH,
         STORY_PATH,
         METADATA_PATH,
+        WB_COMPARISON_PATH,
+        WB_SUMMARY_PATH,
     ]
     missing = [str(path) for path in required if not path.exists()]
     if missing:
@@ -103,6 +107,8 @@ def load_outputs() -> dict:
         "cluster_eval": cluster_eval,
         "stories": pd.read_csv(STORY_PATH),
         "metadata": json.loads(METADATA_PATH.read_text(encoding="utf-8")),
+        "wb_comparison": pd.read_csv(WB_COMPARISON_PATH),
+        "wb_summary": pd.read_csv(WB_SUMMARY_PATH),
     }
 
 
@@ -427,6 +433,48 @@ with tab_method:
     with right:
         st.markdown("**Outliers |z| ≥ 2**")
         st.dataframe(data["outliers"], hide_index=True, width="stretch")
+
+    st.subheader("Kiểm tra chéo GDP growth với World Bank")
+    wb_comparison = data["wb_comparison"].copy()
+    wb_summary = data["wb_summary"].copy()
+    paired = wb_comparison.dropna(subset=["imf_gdp_growth", "world_bank_gdp_growth"])
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Paired observations", f"{len(paired)}/100")
+    c2.metric("Mean absolute difference", f"{paired['absolute_difference_pp'].mean():.3f} pp")
+    c3.metric("Largest difference", f"{paired['absolute_difference_pp'].max():.3f} pp")
+    st.caption(
+        "World Bank indicator NY.GDP.MKTP.KD.ZG chỉ dùng để kiểm tra chéo NGDP_RPCH. "
+        "Giá trị World Bank không thay thế hoặc lấp dữ liệu IMF."
+    )
+    left, right = st.columns([1.2, 1])
+    with left:
+        fig = px.scatter(
+            paired,
+            x="world_bank_gdp_growth",
+            y="imf_gdp_growth",
+            color="country",
+            hover_data=["year", "difference_pp"],
+            labels={
+                "world_bank_gdp_growth": "World Bank GDP growth (%)",
+                "imf_gdp_growth": "IMF WEO GDP growth (%)",
+                "country": "",
+            },
+        )
+        low = min(paired["world_bank_gdp_growth"].min(), paired["imf_gdp_growth"].min())
+        high = max(paired["world_bank_gdp_growth"].max(), paired["imf_gdp_growth"].max())
+        fig.add_shape(type="line", x0=low, y0=low, x1=high, y1=high, line_dash="dash", line_color="#64748b")
+        st.plotly_chart(fig, width="stretch")
+    with right:
+        st.dataframe(
+            wb_summary.round(3),
+            hide_index=True,
+            width="stretch",
+            column_config={
+                "mean_difference_pp": st.column_config.NumberColumn(format="%.3f"),
+                "mean_absolute_difference_pp": st.column_config.NumberColumn(format="%.3f"),
+                "max_absolute_difference_pp": st.column_config.NumberColumn(format="%.3f"),
+            },
+        )
 
     with st.expander("Data provenance và metadata"):
         st.json(metadata)

@@ -5,6 +5,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 FIGURE_DIR = OUTPUT_DIR / "figures"
+CROSSCHECK_DIR = DATA_DIR / "crosscheck"
 
 RAW_PATH = DATA_DIR / "raw_imf_weo.xml"
 CLEAN_PATH = DATA_DIR / "clean_imf_weo.csv"
@@ -17,6 +18,9 @@ CLUSTER_PATH = OUTPUT_DIR / "clusters.csv"
 CLUSTER_EVAL_PATH = OUTPUT_DIR / "cluster_evaluation.csv"
 STORY_PATH = OUTPUT_DIR / "candidate_stories.csv"
 SUMMARY_PATH = PROJECT_ROOT / "analysis_summary.md"
+WB_RAW_PATH = CROSSCHECK_DIR / "raw_world_bank_gdp_growth.json"
+WB_COMPARISON_PATH = CROSSCHECK_DIR / "imf_worldbank_gdp_growth_comparison.csv"
+WB_SUMMARY_PATH = CROSSCHECK_DIR / "imf_worldbank_gdp_growth_summary.csv"
 
 SDMX_BASE = "https://api.imf.org/external/sdmx/2.1"
 WEO_AGENCY = "IMF.RES"

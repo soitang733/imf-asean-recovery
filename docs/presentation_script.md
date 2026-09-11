@@ -10,6 +10,8 @@ Our question is not simply which ASEAN country grew fastest. We ask which countr
 
 We use the April 2026 IMF WEO vintage through the SDMX 2.1 API. The key follows `COUNTRY.INDICATOR.FREQUENCY`. It requests the assignment's ASEAN-10 scope, five indicators and annual data from 2015 to 2024. Our COVID analysis compares 2015–2019, 2020 and 2021–2024.
 
+As an external validation, we compare IMF real GDP growth with World Bank indicator `NY.GDP.MKTP.KD.ZG` for the same ten countries and ten years. The comparison is kept separate and never fills IMF missing values.
+
 ### 1:20–2:20 Shock and recovery
 
 The GDP chart shows a shared shock but different magnitudes. The derived feature `covid_shock` subtracts each country’s pre-COVID average from its 2020 growth. `recovery_gap` compares 2021–2024 average growth with the same baseline.
@@ -39,6 +41,10 @@ The pipeline builds a complete country-by-indicator coverage grid. It does not d
 ### How are forecasts handled?
 
 The request ends in 2024, so 2025–2026 forecasts are not mixed into the main analysis. If forecasts are added later, they must be stored with an explicit actual/estimate/forecast status.
+
+### What is the role of World Bank data?
+
+World Bank GDP growth is a cross-check, not a second input to the main analysis. The output keeps both values and their difference by country and year. IMF remains the authoritative source for the assignment dataset.
 
 ### Why RobustScaler?
 

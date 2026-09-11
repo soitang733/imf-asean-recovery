@@ -1,0 +1,1758 @@
+﻿{
+    "retrieved_at_utc":  "2026-09-11T04:03:53Z",
+    "source":  "World Bank Indicators API v2",
+    "indicator":  "NY.GDP.MKTP.KD.ZG",
+    "period":  "2015-2024",
+    "responses":  {
+                      "BRN":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2024",
+                                                        "value":  4.05251709306727,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2023",
+                                                        "value":  1.12764418162719,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2022",
+                                                        "value":  -1.62833154515108,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2021",
+                                                        "value":  -1.59076260099606,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2020",
+                                                        "value":  1.1335733495246,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2019",
+                                                        "value":  3.86884436177075,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2018",
+                                                        "value":  0.0523710418528935,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2017",
+                                                        "value":  1.32872661057823,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2016",
+                                                        "value":  -2.47791771833224,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "BN",
+                                                                        "value":  "Brunei Darussalam"
+                                                                    },
+                                                        "countryiso3code":  "BRN",
+                                                        "date":  "2015",
+                                                        "value":  -0.392383749502031,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "KHM":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2024",
+                                                        "value":  6.0158145735202,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2023",
+                                                        "value":  5.00733043811898,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2022",
+                                                        "value":  5.12990110773977,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2021",
+                                                        "value":  3.08984284148661,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2020",
+                                                        "value":  -3.55572193406549,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2019",
+                                                        "value":  7.93695013588524,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2018",
+                                                        "value":  8.77622376224463,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2017",
+                                                        "value":  8.07503915535979,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2016",
+                                                        "value":  7.90550116130704,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "KH",
+                                                                        "value":  "Cambodia"
+                                                                    },
+                                                        "countryiso3code":  "KHM",
+                                                        "date":  "2015",
+                                                        "value":  7.20703472529512,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "IDN":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2024",
+                                                        "value":  5.03257477088519,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2023",
+                                                        "value":  5.04883117855516,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2022",
+                                                        "value":  5.30719722664799,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2021",
+                                                        "value":  3.70288562827751,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2020",
+                                                        "value":  -2.06551182934165,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2019",
+                                                        "value":  5.01928768046282,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2018",
+                                                        "value":  5.17429153955024,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2017",
+                                                        "value":  5.06978590134916,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2016",
+                                                        "value":  5.03306918280177,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "ID",
+                                                                        "value":  "Indonesia"
+                                                                    },
+                                                        "countryiso3code":  "IDN",
+                                                        "date":  "2015",
+                                                        "value":  4.87632230022123,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "LAO":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2024",
+                                                        "value":  4.13019264438475,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2023",
+                                                        "value":  3.74568140158232,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2022",
+                                                        "value":  2.70742652643155,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2021",
+                                                        "value":  2.52835100486102,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2020",
+                                                        "value":  0.503031829018681,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2019",
+                                                        "value":  5.4577350924848,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2018",
+                                                        "value":  6.24796000755872,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2017",
+                                                        "value":  6.8925308726989,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2016",
+                                                        "value":  7.02283625501138,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "LA",
+                                                                        "value":  "Lao PDR"
+                                                                    },
+                                                        "countryiso3code":  "LAO",
+                                                        "date":  "2015",
+                                                        "value":  7.27006584373785,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "MYS":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2024",
+                                                        "value":  5.10545921024041,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2023",
+                                                        "value":  3.5370638041057,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2022",
+                                                        "value":  9.03173723044451,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2021",
+                                                        "value":  3.31534954399166,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2020",
+                                                        "value":  -5.45684658426701,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2019",
+                                                        "value":  4.41318742129586,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2018",
+                                                        "value":  4.84308697634881,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2017",
+                                                        "value":  5.81272240983328,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2016",
+                                                        "value":  4.44978139761541,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MY",
+                                                                        "value":  "Malaysia"
+                                                                    },
+                                                        "countryiso3code":  "MYS",
+                                                        "date":  "2015",
+                                                        "value":  5.09153242155011,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "MMR":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2024",
+                                                        "value":  -0.97204641363362,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2023",
+                                                        "value":  0.958446625126115,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2022",
+                                                        "value":  4.0374934360085,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2021",
+                                                        "value":  -12.0163724829177,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2020",
+                                                        "value":  -9.04834717984643,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2019",
+                                                        "value":  6.57911006765414,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2018",
+                                                        "value":  6.26886221471075,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2017",
+                                                        "value":  6.13610824360305,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2016",
+                                                        "value":  5.86247291518572,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "MM",
+                                                                        "value":  "Myanmar"
+                                                                    },
+                                                        "countryiso3code":  "MMR",
+                                                        "date":  "2015",
+                                                        "value":  6.99284029026121,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "PHL":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2024",
+                                                        "value":  5.71474526128652,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2023",
+                                                        "value":  5.51894967856043,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2022",
+                                                        "value":  7.58098212785563,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2021",
+                                                        "value":  5.71473313185116,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2020",
+                                                        "value":  -9.51829474045297,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2019",
+                                                        "value":  6.11852566221303,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2018",
+                                                        "value":  6.34148557153473,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2017",
+                                                        "value":  6.9309883258402,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2016",
+                                                        "value":  7.14945675000752,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "PH",
+                                                                        "value":  "Philippines"
+                                                                    },
+                                                        "countryiso3code":  "PHL",
+                                                        "date":  "2015",
+                                                        "value":  6.34830971672761,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "SGP":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2024",
+                                                        "value":  5.3435120192366,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2023",
+                                                        "value":  1.45026775889565,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2022",
+                                                        "value":  4.01027884472296,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2021",
+                                                        "value":  10.1410845197192,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2020",
+                                                        "value":  -3.61084281729929,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2019",
+                                                        "value":  1.15877947300108,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2018",
+                                                        "value":  3.18660848474074,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2017",
+                                                        "value":  4.32679370770501,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2016",
+                                                        "value":  3.91095306322606,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "SG",
+                                                                        "value":  "Singapore"
+                                                                    },
+                                                        "countryiso3code":  "SGP",
+                                                        "date":  "2015",
+                                                        "value":  2.97679931634806,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "THA":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2024",
+                                                        "value":  2.94859986593323,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2023",
+                                                        "value":  2.24883437970568,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2022",
+                                                        "value":  2.63784213566305,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2021",
+                                                        "value":  1.55858232076893,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2020",
+                                                        "value":  -6.09306312966953,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2019",
+                                                        "value":  2.11455779628278,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2018",
+                                                        "value":  4.22287028746071,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2017",
+                                                        "value":  4.1776810321001,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2016",
+                                                        "value":  3.43515771692182,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "TH",
+                                                                        "value":  "Thailand"
+                                                                    },
+                                                        "countryiso3code":  "THA",
+                                                        "date":  "2015",
+                                                        "value":  3.13404724911635,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              },
+                      "VNM":  {
+                                  "value":  [
+                                                {
+                                                    "page":  1,
+                                                    "pages":  1,
+                                                    "per_page":  100,
+                                                    "total":  10,
+                                                    "sourceid":  "2",
+                                                    "lastupdated":  "2026-07-13"
+                                                },
+                                                [
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2024",
+                                                        "value":  7.03955197123018,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2023",
+                                                        "value":  4.97865959483225,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2022",
+                                                        "value":  8.53750041218142,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2021",
+                                                        "value":  2.55372852648131,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2020",
+                                                        "value":  2.86541320912272,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2019",
+                                                        "value":  7.35926270105006,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2018",
+                                                        "value":  7.46500685572751,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2017",
+                                                        "value":  6.94019037359206,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2016",
+                                                        "value":  6.69000892660424,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    },
+                                                    {
+                                                        "indicator":  {
+                                                                          "id":  "NY.GDP.MKTP.KD.ZG",
+                                                                          "value":  "GDP growth (annual %)"
+                                                                      },
+                                                        "country":  {
+                                                                        "id":  "VN",
+                                                                        "value":  "Viet Nam"
+                                                                    },
+                                                        "countryiso3code":  "VNM",
+                                                        "date":  "2015",
+                                                        "value":  6.98715430598611,
+                                                        "unit":  "",
+                                                        "obs_status":  "",
+                                                        "decimal":  1
+                                                    }
+                                                ]
+                                            ],
+                                  "Count":  2
+                              }
+                  }
+}

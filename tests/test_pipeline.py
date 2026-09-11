@@ -5,6 +5,7 @@ import pandas as pd
 from src.data import build_coverage, build_sdmx_url, clean_sdmx
 from src.features import build_country_features, build_transparent_ranking
 from src.clustering import select_cluster_features
+from src.crosscheck import build_gdp_crosscheck, build_world_bank_url, parse_world_bank_raw
 
 
 def test_sdmx_url_contains_required_dimensions():
@@ -13,6 +14,39 @@ def test_sdmx_url_contains_required_dimensions():
     assert ".NGDP_RPCH+PCPIPCH+GGXWDG_NGDP+LUR+BCA_NGDPD.A" in url
     assert "TLS" not in url
     assert "startPeriod=2015&endPeriod=2024" in url
+
+
+def test_world_bank_crosscheck_url_and_parser():
+    assert build_world_bank_url("VNM").endswith("/country/VNM/indicator/NY.GDP.MKTP.KD.ZG")
+    raw = {
+        "responses": {
+            "VNM": [
+                {"page": 1},
+                [
+                    {"date": "2015", "value": 6.7},
+                    {"date": "2016", "value": None},
+                ],
+            ]
+        }
+    }
+    parsed = parse_world_bank_raw(raw)
+    assert len(parsed) == 2
+    assert parsed.loc[parsed["year"] == 2015, "world_bank_gdp_growth"].iloc[0] == 6.7
+    assert parsed.loc[parsed["year"] == 2016, "world_bank_gdp_growth"].isna().iloc[0]
+
+
+def test_world_bank_crosscheck_keeps_full_grid():
+    imf = pd.DataFrame(
+        [{"country_code": "VNM", "indicator_code": "NGDP_RPCH", "year": 2015, "value": 6.5}]
+    )
+    wb = pd.DataFrame(
+        [{"country_code": "VNM", "year": 2015, "world_bank_gdp_growth": 6.7}]
+    )
+    comparison, summary = build_gdp_crosscheck(imf, wb)
+    assert len(comparison) == 100
+    assert len(summary) == 10
+    row = comparison.query("country_code == 'VNM' and year == 2015").iloc[0]
+    assert round(row["difference_pp"], 10) == -0.2
 
 
 def test_feature_formulas():

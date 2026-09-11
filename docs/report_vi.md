@@ -10,6 +10,8 @@ Dataset gồm 10 nước ASEAN, 5 chỉ tiêu và 10 năm từ 2015 đến 2024,
 
 Các giá trị này được giữ là `NA`. Pipeline không nội suy, không lấy nguồn khác để lấp và không đưa `LUR` vào phân cụm vì chỉ tiêu này không có coverage đầy đủ cho ASEAN-10. Phân tích thất nghiệp riêng chỉ sử dụng bảy quốc gia có quan sát hợp lệ.
 
+Tăng trưởng GDP thực được kiểm tra chéo với chỉ tiêu `NY.GDP.MKTP.KD.ZG` của World Bank cho đủ 100 cặp country × year. World Bank chỉ dùng để đánh giá mức độ nhất quán giữa hai nguồn; dữ liệu này không ghi đè dataset IMF và không được dùng để lấp bất kỳ giá trị thiếu nào.
+
 ## Kết quả chính
 
 ### Cùng mức sốc, tốc độ phục hồi khác nhau

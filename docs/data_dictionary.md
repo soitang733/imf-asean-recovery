@@ -7,6 +7,7 @@
 | WEO April 2026 | GGXWDG_NGDP | General government gross debt | % GDP | Annual | Required |
 | WEO April 2026 | LUR | Unemployment rate | % | Annual | Required; NA retained |
 | WEO April 2026 | BCA_NGDPD | Current account balance | % GDP | Annual | Required; NA retained |
+| World Bank Indicators API | NY.GDP.MKTP.KD.ZG | GDP growth | Annual % change | Annual | External cross-check only |
 
 ## Clean data schema
 
@@ -39,3 +40,17 @@
 | current_account_change | mean BCA_NGDPD 2021–2024 − mean BCA_NGDPD 2015–2019 |
 
 Countries are never dropped merely because a few observations are missing. Missing coverage is reported separately.
+
+## IMF–World Bank cross-check schema
+
+| Field | Description |
+|---|---|
+| country_code | ASEAN-10 country code |
+| country | Display name from the IMF configuration |
+| year | Annual observation year, 2015–2024 |
+| imf_gdp_growth | IMF WEO `NGDP_RPCH` |
+| world_bank_gdp_growth | World Bank `NY.GDP.MKTP.KD.ZG` |
+| difference_pp | IMF minus World Bank, percentage points |
+| absolute_difference_pp | Absolute difference between the two sources |
+
+The World Bank values are validation evidence only. They do not feed the IMF clean dataset, derived features, rankings or clusters.
